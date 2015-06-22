@@ -78,7 +78,11 @@ class MainViewController: UIViewController {
         self.view.addSubview(infobutton)
         //buttonを生成 end
         
+        
+        
     }
+    
+    
     
     
     

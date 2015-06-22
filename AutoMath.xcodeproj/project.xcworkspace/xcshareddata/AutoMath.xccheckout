@@ -10,14 +10,14 @@
 	<string>AutoMath</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5543A9D00D9373C8A0A337684423082F650CEDEC</key>
+		<key>80BFDF00CC49F5B0229B753828DC1BC592F4F2EA</key>
 		<string>https://github.com/MINEMIN78/AutoMath.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>AutoMath.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5543A9D00D9373C8A0A337684423082F650CEDEC</key>
+		<key>80BFDF00CC49F5B0229B753828DC1BC592F4F2EA</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5543A9D00D9373C8A0A337684423082F650CEDEC</string>
+	<string>80BFDF00CC49F5B0229B753828DC1BC592F4F2EA</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5543A9D00D9373C8A0A337684423082F650CEDEC</string>
+			<string>80BFDF00CC49F5B0229B753828DC1BC592F4F2EA</string>
 			<key>IDESourceControlWCCName</key>
 			<string>AutoMath</string>
 		</dict>
