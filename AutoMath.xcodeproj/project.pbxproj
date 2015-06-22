@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75F707D41B35FB38005400E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F707D31B35FB38005400E2 /* AppDelegate.swift */; };
+		75F707D61B35FB38005400E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F707D51B35FB38005400E2 /* ViewController.swift */; };
+		75F707D91B35FB38005400E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F707D71B35FB38005400E2 /* Main.storyboard */; };
+		75F707DB1B35FB38005400E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75F707DA1B35FB38005400E2 /* Images.xcassets */; };
+		75F707DE1B35FB38005400E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75F707DC1B35FB38005400E2 /* LaunchScreen.xib */; };
+		75F707EA1B35FB38005400E2 /* AutoMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F707E91B35FB38005400E2 /* AutoMathTests.swift */; };
+		75F707F41B35FC05005400E2 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F707F31B35FC05005400E2 /* DrawerViewController.swift */; };
+		75F707F61B35FC0B005400E2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F707F51B35FC0B005400E2 /* SecondViewController.swift */; };
+		75F707F91B35FC12005400E2 /* front.png in Resources */ = {isa = PBXBuildFile; fileRef = 75F707F71B35FC12005400E2 /* front.png */; };
+		75F707FA1B35FC12005400E2 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 75F707F81B35FC12005400E2 /* tabbar.png */; };
+		75F707FF1B35FC24005400E2 /* KYDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F707FC1B35FC24005400E2 /* KYDrawerController.swift */; };
+		75F708001B35FC24005400E2 /* KYEmbedDrawerControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F707FD1B35FC24005400E2 /* KYEmbedDrawerControllerSegue.swift */; };
+		75F708011B35FC24005400E2 /* KYEmbedMainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F707FE1B35FC24005400E2 /* KYEmbedMainControllerSegue.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75F707E41B35FB38005400E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75F707C61B35FB38005400E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75F707CD1B35FB38005400E2;
+			remoteInfo = AutoMath;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75F707CE1B35FB38005400E2 /* AutoMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75F707D21B35FB38005400E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F707D31B35FB38005400E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75F707D51B35FB38005400E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75F707D81B35FB38005400E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75F707DA1B35FB38005400E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		75F707DD1B35FB38005400E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		75F707E31B35FB38005400E2 /* AutoMathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoMathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75F707E81B35FB38005400E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F707E91B35FB38005400E2 /* AutoMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMathTests.swift; sourceTree = "<group>"; };
+		75F707F31B35FC05005400E2 /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawerViewController.swift; path = "../../../../Downloads/KYDrawerController-master/Example/Code/Code/DrawerViewController.swift"; sourceTree = "<group>"; };
+		75F707F51B35FC0B005400E2 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = "../../../../Downloads/KYDrawerController-master/Example/Code/Code/SecondViewController.swift"; sourceTree = "<group>"; };
+		75F707F71B35FC12005400E2 /* front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = front.png; path = "../../../../Downloads/KYDrawerController-master/Example/Code/Code/front.png"; sourceTree = "<group>"; };
+		75F707F81B35FC12005400E2 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar.png; path = "../../../../Downloads/KYDrawerController-master/Example/Code/Code/tabbar.png"; sourceTree = "<group>"; };
+		75F707FC1B35FC24005400E2 /* KYDrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYDrawerController.swift; sourceTree = "<group>"; };
+		75F707FD1B35FC24005400E2 /* KYEmbedDrawerControllerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYEmbedDrawerControllerSegue.swift; sourceTree = "<group>"; };
+		75F707FE1B35FC24005400E2 /* KYEmbedMainControllerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYEmbedMainControllerSegue.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75F707CB1B35FB38005400E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F707E01B35FB38005400E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75F707C51B35FB38005400E2 = {
+			isa = PBXGroup;
+			children = (
+				75F707D01B35FB38005400E2 /* AutoMath */,
+				75F707E61B35FB38005400E2 /* AutoMathTests */,
+				75F707CF1B35FB38005400E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75F707CF1B35FB38005400E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75F707CE1B35FB38005400E2 /* AutoMath.app */,
+				75F707E31B35FB38005400E2 /* AutoMathTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75F707D01B35FB38005400E2 /* AutoMath */ = {
+			isa = PBXGroup;
+			children = (
+				75F707FB1B35FC24005400E2 /* KYDrawerController */,
+				75F707D31B35FB38005400E2 /* AppDelegate.swift */,
+				75F707D51B35FB38005400E2 /* ViewController.swift */,
+				75F707F51B35FC0B005400E2 /* SecondViewController.swift */,
+				75F707F31B35FC05005400E2 /* DrawerViewController.swift */,
+				75F707D71B35FB38005400E2 /* Main.storyboard */,
+				75F707F71B35FC12005400E2 /* front.png */,
+				75F707F81B35FC12005400E2 /* tabbar.png */,
+				75F707DA1B35FB38005400E2 /* Images.xcassets */,
+				75F707DC1B35FB38005400E2 /* LaunchScreen.xib */,
+				75F707D11B35FB38005400E2 /* Supporting Files */,
+			);
+			path = AutoMath;
+			sourceTree = "<group>";
+		};
+		75F707D11B35FB38005400E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75F707D21B35FB38005400E2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75F707E61B35FB38005400E2 /* AutoMathTests */ = {
+			isa = PBXGroup;
+			children = (
+				75F707E91B35FB38005400E2 /* AutoMathTests.swift */,
+				75F707E71B35FB38005400E2 /* Supporting Files */,
+			);
+			path = AutoMathTests;
+			sourceTree = "<group>";
+		};
+		75F707E71B35FB38005400E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75F707E81B35FB38005400E2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75F707FB1B35FC24005400E2 /* KYDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				75F707FC1B35FC24005400E2 /* KYDrawerController.swift */,
+				75F707FD1B35FC24005400E2 /* KYEmbedDrawerControllerSegue.swift */,
+				75F707FE1B35FC24005400E2 /* KYEmbedMainControllerSegue.swift */,
+			);
+			name = KYDrawerController;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75F707CD1B35FB38005400E2 /* AutoMath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75F707ED1B35FB38005400E2 /* Build configuration list for PBXNativeTarget "AutoMath" */;
+			buildPhases = (
+				75F707CA1B35FB38005400E2 /* Sources */,
+				75F707CB1B35FB38005400E2 /* Frameworks */,
+				75F707CC1B35FB38005400E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoMath;
+			productName = AutoMath;
+			productReference = 75F707CE1B35FB38005400E2 /* AutoMath.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75F707E21B35FB38005400E2 /* AutoMathTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75F707F01B35FB38005400E2 /* Build configuration list for PBXNativeTarget "AutoMathTests" */;
+			buildPhases = (
+				75F707DF1B35FB38005400E2 /* Sources */,
+				75F707E01B35FB38005400E2 /* Frameworks */,
+				75F707E11B35FB38005400E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75F707E51B35FB38005400E2 /* PBXTargetDependency */,
+			);
+			name = AutoMathTests;
+			productName = AutoMathTests;
+			productReference = 75F707E31B35FB38005400E2 /* AutoMathTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75F707C61B35FB38005400E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = YUMAKOMORI;
+				TargetAttributes = {
+					75F707CD1B35FB38005400E2 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					75F707E21B35FB38005400E2 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 75F707CD1B35FB38005400E2;
+					};
+				};
+			};
+			buildConfigurationList = 75F707C91B35FB38005400E2 /* Build configuration list for PBXProject "AutoMath" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75F707C51B35FB38005400E2;
+			productRefGroup = 75F707CF1B35FB38005400E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75F707CD1B35FB38005400E2 /* AutoMath */,
+				75F707E21B35FB38005400E2 /* AutoMathTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75F707CC1B35FB38005400E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F707FA1B35FC12005400E2 /* tabbar.png in Resources */,
+				75F707D91B35FB38005400E2 /* Main.storyboard in Resources */,
+				75F707F91B35FC12005400E2 /* front.png in Resources */,
+				75F707DE1B35FB38005400E2 /* LaunchScreen.xib in Resources */,
+				75F707DB1B35FB38005400E2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F707E11B35FB38005400E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75F707CA1B35FB38005400E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F708001B35FC24005400E2 /* KYEmbedDrawerControllerSegue.swift in Sources */,
+				75F708011B35FC24005400E2 /* KYEmbedMainControllerSegue.swift in Sources */,
+				75F707F61B35FC0B005400E2 /* SecondViewController.swift in Sources */,
+				75F707D61B35FB38005400E2 /* ViewController.swift in Sources */,
+				75F707D41B35FB38005400E2 /* AppDelegate.swift in Sources */,
+				75F707F41B35FC05005400E2 /* DrawerViewController.swift in Sources */,
+				75F707FF1B35FC24005400E2 /* KYDrawerController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F707DF1B35FB38005400E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F707EA1B35FB38005400E2 /* AutoMathTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75F707E51B35FB38005400E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75F707CD1B35FB38005400E2 /* AutoMath */;
+			targetProxy = 75F707E41B35FB38005400E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75F707D71B35FB38005400E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75F707D81B35FB38005400E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75F707DC1B35FB38005400E2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75F707DD1B35FB38005400E2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75F707EB1B35FB38005400E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75F707EC1B35FB38005400E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75F707EE1B35FB38005400E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AutoMath/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		75F707EF1B35FB38005400E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AutoMath/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		75F707F11B35FB38005400E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AutoMathTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoMath.app/AutoMath";
+			};
+			name = Debug;
+		};
+		75F707F21B35FB38005400E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AutoMathTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoMath.app/AutoMath";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75F707C91B35FB38005400E2 /* Build configuration list for PBXProject "AutoMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75F707EB1B35FB38005400E2 /* Debug */,
+				75F707EC1B35FB38005400E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75F707ED1B35FB38005400E2 /* Build configuration list for PBXNativeTarget "AutoMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75F707EE1B35FB38005400E2 /* Debug */,
+				75F707EF1B35FB38005400E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		75F707F01B35FB38005400E2 /* Build configuration list for PBXNativeTarget "AutoMathTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75F707F11B35FB38005400E2 /* Debug */,
+				75F707F21B35FB38005400E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75F707C61B35FB38005400E2 /* Project object */;
+}
