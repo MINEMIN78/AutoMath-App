@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75707CC61B38861C000B492A /* 1th2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75707CC31B38861C000B492A /* 1th2.png */; };
+		75707CC71B38861C000B492A /* 2th2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75707CC41B38861C000B492A /* 2th2.png */; };
+		75707CC81B38861C000B492A /* 3th2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75707CC51B38861C000B492A /* 3th2.png */; };
+		75707CCC1B38896A000B492A /* 1th3.png in Resources */ = {isa = PBXBuildFile; fileRef = 75707CC91B38896A000B492A /* 1th3.png */; };
+		75707CCD1B38896A000B492A /* 2th3.png in Resources */ = {isa = PBXBuildFile; fileRef = 75707CCA1B38896A000B492A /* 2th3.png */; };
+		75707CCE1B38896A000B492A /* 3th3.png in Resources */ = {isa = PBXBuildFile; fileRef = 75707CCB1B38896A000B492A /* 3th3.png */; };
+		75E104261B39425200E58275 /* formula1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E104251B39425200E58275 /* formula1.png */; };
+		75E1042A1B39460400E58275 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E104291B39460400E58275 /* ThirdViewController.swift */; };
+		75E1042C1B39464200E58275 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1042B1B39464200E58275 /* SecondViewController.swift */; };
+		75E1042E1B3946F500E58275 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1042D1B3946F500E58275 /* FourthViewController.swift */; };
 		75F707D41B35FB38005400E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F707D31B35FB38005400E2 /* AppDelegate.swift */; };
 		75F707D61B35FB38005400E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F707D51B35FB38005400E2 /* ViewController.swift */; };
 		75F707D91B35FB38005400E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F707D71B35FB38005400E2 /* Main.storyboard */; };
@@ -14,7 +24,6 @@
 		75F707DE1B35FB38005400E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75F707DC1B35FB38005400E2 /* LaunchScreen.xib */; };
 		75F707EA1B35FB38005400E2 /* AutoMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F707E91B35FB38005400E2 /* AutoMathTests.swift */; };
 		75F707F41B35FC05005400E2 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F707F31B35FC05005400E2 /* DrawerViewController.swift */; };
-		75F707F61B35FC0B005400E2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F707F51B35FC0B005400E2 /* SecondViewController.swift */; };
 		75F707F91B35FC12005400E2 /* front.png in Resources */ = {isa = PBXBuildFile; fileRef = 75F707F71B35FC12005400E2 /* front.png */; };
 		75F707FA1B35FC12005400E2 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 75F707F81B35FC12005400E2 /* tabbar.png */; };
 		75F707FF1B35FC24005400E2 /* KYDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F707FC1B35FC24005400E2 /* KYDrawerController.swift */; };
@@ -33,6 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75707CC31B38861C000B492A /* 1th2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1th2.png; sourceTree = "<group>"; };
+		75707CC41B38861C000B492A /* 2th2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2th2.png; sourceTree = "<group>"; };
+		75707CC51B38861C000B492A /* 3th2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3th2.png; sourceTree = "<group>"; };
+		75707CC91B38896A000B492A /* 1th3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1th3.png; sourceTree = "<group>"; };
+		75707CCA1B38896A000B492A /* 2th3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2th3.png; sourceTree = "<group>"; };
+		75707CCB1B38896A000B492A /* 3th3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3th3.png; sourceTree = "<group>"; };
+		75E104251B39425200E58275 /* formula1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = formula1.png; sourceTree = "<group>"; };
+		75E104291B39460400E58275 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		75E1042B1B39464200E58275 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		75E1042D1B3946F500E58275 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		75F707CE1B35FB38005400E2 /* AutoMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F707D21B35FB38005400E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75F707D31B35FB38005400E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +63,6 @@
 		75F707E81B35FB38005400E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75F707E91B35FB38005400E2 /* AutoMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMathTests.swift; sourceTree = "<group>"; };
 		75F707F31B35FC05005400E2 /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawerViewController.swift; path = "../../../../Downloads/KYDrawerController-master/Example/Code/Code/DrawerViewController.swift"; sourceTree = "<group>"; };
-		75F707F51B35FC0B005400E2 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = "../../../../Downloads/KYDrawerController-master/Example/Code/Code/SecondViewController.swift"; sourceTree = "<group>"; };
 		75F707F71B35FC12005400E2 /* front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = front.png; path = "../../../../Downloads/KYDrawerController-master/Example/Code/Code/front.png"; sourceTree = "<group>"; };
 		75F707F81B35FC12005400E2 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar.png; path = "../../../../Downloads/KYDrawerController-master/Example/Code/Code/tabbar.png"; sourceTree = "<group>"; };
 		75F707FC1B35FC24005400E2 /* KYDrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYDrawerController.swift; sourceTree = "<group>"; };
@@ -93,10 +111,19 @@
 			children = (
 				75F707FB1B35FC24005400E2 /* KYDrawerController */,
 				75F707D31B35FB38005400E2 /* AppDelegate.swift */,
+				75E1042D1B3946F500E58275 /* FourthViewController.swift */,
 				75F707D51B35FB38005400E2 /* ViewController.swift */,
-				75F707F51B35FC0B005400E2 /* SecondViewController.swift */,
+				75E1042B1B39464200E58275 /* SecondViewController.swift */,
 				75F707F31B35FC05005400E2 /* DrawerViewController.swift */,
+				75E104291B39460400E58275 /* ThirdViewController.swift */,
 				75F707D71B35FB38005400E2 /* Main.storyboard */,
+				75E104251B39425200E58275 /* formula1.png */,
+				75707CC31B38861C000B492A /* 1th2.png */,
+				75707CC91B38896A000B492A /* 1th3.png */,
+				75707CCA1B38896A000B492A /* 2th3.png */,
+				75707CCB1B38896A000B492A /* 3th3.png */,
+				75707CC41B38861C000B492A /* 2th2.png */,
+				75707CC51B38861C000B492A /* 3th2.png */,
 				75F707F71B35FC12005400E2 /* front.png */,
 				75F707F81B35FC12005400E2 /* tabbar.png */,
 				75F707DA1B35FB38005400E2 /* Images.xcassets */,
@@ -222,8 +249,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75707CCC1B38896A000B492A /* 1th3.png in Resources */,
+				75707CC61B38861C000B492A /* 1th2.png in Resources */,
+				75E104261B39425200E58275 /* formula1.png in Resources */,
+				75707CCD1B38896A000B492A /* 2th3.png in Resources */,
 				75F707FA1B35FC12005400E2 /* tabbar.png in Resources */,
 				75F707D91B35FB38005400E2 /* Main.storyboard in Resources */,
+				75707CCE1B38896A000B492A /* 3th3.png in Resources */,
+				75707CC71B38861C000B492A /* 2th2.png in Resources */,
+				75707CC81B38861C000B492A /* 3th2.png in Resources */,
 				75F707F91B35FC12005400E2 /* front.png in Resources */,
 				75F707DE1B35FB38005400E2 /* LaunchScreen.xib in Resources */,
 				75F707DB1B35FB38005400E2 /* Images.xcassets in Resources */,
@@ -244,12 +278,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E1042C1B39464200E58275 /* SecondViewController.swift in Sources */,
 				75F708001B35FC24005400E2 /* KYEmbedDrawerControllerSegue.swift in Sources */,
 				75F708011B35FC24005400E2 /* KYEmbedMainControllerSegue.swift in Sources */,
-				75F707F61B35FC0B005400E2 /* SecondViewController.swift in Sources */,
+				75E1042E1B3946F500E58275 /* FourthViewController.swift in Sources */,
 				75F707D61B35FB38005400E2 /* ViewController.swift in Sources */,
 				75F707D41B35FB38005400E2 /* AppDelegate.swift in Sources */,
 				75F707F41B35FC05005400E2 /* DrawerViewController.swift in Sources */,
+				75E1042A1B39460400E58275 /* ThirdViewController.swift in Sources */,
 				75F707FF1B35FC24005400E2 /* KYDrawerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +482,7 @@
 				75F707EF1B35FB38005400E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75F707F01B35FB38005400E2 /* Build configuration list for PBXNativeTarget "AutoMathTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +491,7 @@
 				75F707F21B35FB38005400E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

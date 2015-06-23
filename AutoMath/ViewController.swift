@@ -18,9 +18,31 @@ class MainViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
+    //グラデーション start
+        
+        //グラデーションの開始色
+        let topColor = UIColor(red:0.93, green:0.93, blue:0.94, alpha:1.0)
+        //グラデーションの開始色
+        let bottomColor = UIColor(red:0.82, green:0.95, blue:1.00, alpha:1.0)
+
         
         
-        view.backgroundColor = UIColor(red:0.93, green:0.93, blue:0.94, alpha:1.0)
+        
+        //グラデーションの色を配列で管理
+        let gradientColors: [CGColor] = [topColor.CGColor, bottomColor.CGColor]
+        
+        //グラデーションレイヤーを作成
+        let gradientLayer: CAGradientLayer = CAGradientLayer()
+        
+        //グラデーションの色をレイヤーに割り当てる
+        gradientLayer.colors = gradientColors
+        //グラデーションレイヤーをスクリーンサイズにする
+        gradientLayer.frame = self.view.bounds
+        
+        //グラデーションレイヤーをビューの一番下に配置
+        self.view.layer.insertSublayer(gradientLayer, atIndex: 0)
+        
+    //グラデーション end
         
         //buttonを生成 start
         let logbutton = UIButton()

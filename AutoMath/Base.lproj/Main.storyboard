@@ -39,7 +39,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rx9-f8-1U6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744.5" y="266.5"/>
+            <point key="canvasLocation" x="677.5" y="-46.5"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="aj0-Ky-U4Z">
+            <objects>
+                <viewController id="0wM-Vz-okO" customClass="ThirdViewController" customModule="AutoMath" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d37-R1-TIL"/>
+                        <viewControllerLayoutGuide type="bottom" id="kD2-Kf-oV9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xx2-cl-yET">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hg3-rh-lzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="-124"/>
         </scene>
     </scenes>
 </document>
