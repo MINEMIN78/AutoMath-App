@@ -11,7 +11,7 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>80BFDF00CC49F5B0229B753828DC1BC592F4F2EA</key>
-		<string>https://github.com/MINEMIN78/AutoMath.git</string>
+		<string>https://github.com/MINEMIN78/AutoMath-App.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>AutoMath.xcodeproj</string>
@@ -21,7 +21,7 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/MINEMIN78/AutoMath.git</string>
+	<string>https://github.com/MINEMIN78/AutoMath-App.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>

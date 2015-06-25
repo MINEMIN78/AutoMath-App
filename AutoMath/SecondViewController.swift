@@ -56,6 +56,11 @@ class SecondViewController: UIViewController {
         
         //scroll view start
         //UIImageに画像の名前を指定します
+        let for1 = UIImage(named: "f-parts1.png")
+        let for2 = UIImage(named: "f-parts2.png")
+        let for3 = UIImage(named: "f-parts3.png")
+        let for4 = UIImage(named: "f-parts4.png")
+        let for5 = UIImage(named: "f-parts5.png")
         let img1 = UIImage(named:"formula1.png");
         let img2 = UIImage(named:"formula1.png");
         let img3 = UIImage(named:"formula1.png");
@@ -65,6 +70,27 @@ class SecondViewController: UIViewController {
         let imageView2 = UIImageView(image:img2)
         let imageView3 = UIImageView(image:img3)
         
+        //formulabutton
+        let f1button = UIButton()
+        let f2button = UIButton()
+        let f3button = UIButton()
+        let f4button = UIButton()
+        let f5button = UIButton()
+        
+        //f1
+            f1button.tag = 1
+            f1button.frame = CGRectMake(0,0,self.view.frame.width,self.view.frame.height/11)
+        f1button.layer.position = CGPoint(x:self.view.frame.width/2,y:self.view.frame.height*2/11)
+        
+        //f2
+        
+        //f3
+        
+        //f4
+        
+        //f5
+        
+        
         //UIScrollViewを作成します
         let scrView = UIScrollView()
         
@@ -72,12 +98,14 @@ class SecondViewController: UIViewController {
         scrView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
         
         //全体のサイズ
-        scrView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height*3)
+        scrView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height*4)
         
         //UIImageViewのサイズと位置を決めます
         imageView1.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
         imageView2.frame = CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, self.view.frame.size.height)
         imageView3.frame = CGRectMake(0, self.view.frame.size.height*2, self.view.frame.size.width, self.view.frame.size.height)
+        
+        
         
         //viewに追加します
         self.view.addSubview(scrView)

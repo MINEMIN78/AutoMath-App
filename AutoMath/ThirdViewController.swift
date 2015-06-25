@@ -62,7 +62,7 @@ class ThirdViewController: UIViewController {
         let mondai1image = UIImageView(image:back1)
         
         mondai1image.frame = CGRectMake(0, 0, self.view.frame.width*0.95, self.view.frame.height/4)
-        mondai1image.layer.position = CGPoint(x: self.view.frame.width/2, y:self.view.frame.height/4-30)
+        mondai1image.layer.position = CGPoint(x: self.view.frame.width/2, y:self.view.frame.height/4-20)
         
         self.view.addSubview(mondai1image)
         
@@ -75,7 +75,7 @@ class ThirdViewController: UIViewController {
         
         ichibutton.tag = 1
         ichibutton.frame = CGRectMake(0, 0, self.view.frame.width*2/5, self.view.frame.width*2/5)
-        ichibutton.layer.position = CGPoint(x: self.view.frame.width/4, y:self.view.frame.height/4-30)
+        ichibutton.layer.position = CGPoint(x: self.view.frame.width/4, y:self.view.frame.height/4-20)
         ichibutton.setImage(ichiimg, forState: .Normal)
         ichibutton.addTarget(self, action: "btn_click:", forControlEvents:.TouchUpInside)
         
@@ -114,7 +114,7 @@ class ThirdViewController: UIViewController {
         let mondai3image = UIImageView(image:back3)
         
         mondai3image.frame = CGRectMake(0, 0, self.view.frame.width*0.95, self.view.frame.height/4)
-        mondai3image.layer.position = CGPoint(x: self.view.frame.width/2, y:self.view.frame.height*3/4+30)
+        mondai3image.layer.position = CGPoint(x: self.view.frame.width/2, y:self.view.frame.height*3/4+20)
         
         self.view.addSubview(mondai3image)
         
@@ -125,7 +125,7 @@ class ThirdViewController: UIViewController {
         let sannenbutton = UIButton()
         sannenbutton.tag = 3
         sannenbutton.frame = CGRectMake(0, 0, self.view.frame.width*2/5, self.view.frame.width*2/5)
-        sannenbutton.layer.position = CGPoint(x: self.view.frame.width/4, y:self.view.frame.height*3/4+30)
+        sannenbutton.layer.position = CGPoint(x: self.view.frame.width/4, y:self.view.frame.height*3/4+20)
         sannenbutton.setImage(sanimg, forState: .Normal)
         sannenbutton.addTarget(self, action: "btn_click:", forControlEvents:.TouchUpInside)
         self.view.addSubview(sannenbutton)
