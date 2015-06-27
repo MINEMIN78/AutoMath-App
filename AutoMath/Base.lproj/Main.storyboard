@@ -21,6 +21,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="238.5" y="243.5"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="0JJ-Vh-vUW">
+            <objects>
+                <viewController id="fWP-h2-8rI" customClass="LoginViewController" customModule="AutoMath" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aTw-Qw-IiX"/>
+                        <viewControllerLayoutGuide type="bottom" id="ig0-9Q-45w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XVv-Tn-SYV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hph-9k-81c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80.5" y="-385.5"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="4WH-UD-sAX">
@@ -58,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hg3-rh-lzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="725.5" y="-309.5"/>
+            <point key="canvasLocation" x="1146.5" y="-157.5"/>
         </scene>
     </scenes>
 </document>

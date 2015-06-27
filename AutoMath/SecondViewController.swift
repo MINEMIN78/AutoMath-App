@@ -8,17 +8,32 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UINavigationController{
     
 
-
+    var window: UIWindow?
 
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Navigation var
+        let secondViewController = SecondViewController()
+        let drawerViewController = DrawerViewController()
+        let drawerController     = KYDrawerController()
+        
 
+        
+        drawerController.mainViewController = UINavigationController()
+        
+        
+        drawerController.drawerViewController = drawerViewController
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        window?.rootViewController = drawerController
+        window?.makeKeyAndVisible()
         
         
         
@@ -80,7 +95,7 @@ class SecondViewController: UIViewController {
         //f1
             f1button.tag = 1
             f1button.frame = CGRectMake(0,0,self.view.frame.width,self.view.frame.height/11)
-        f1button.layer.position = CGPoint(x:self.view.frame.width/2,y:self.view.frame.height*2/11)
+            f1button.layer.position = CGPoint(x:self.view.frame.width/2,y:self.view.frame.height*2/11)
         
         //f2
         

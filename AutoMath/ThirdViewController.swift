@@ -11,17 +11,31 @@ import UIKit
 class ThirdViewController: UIViewController {
     
     
-
+    var window: UIWindow?
     
-//    let ichiimg = UIImage(named: "mondai1.png") as UIImage!
-//    let niimg = UIImage(named: "mondai2.png") as UIImage!
-//    let sanimg = UIImage(named: "mondai3.png") as UIImage!
+    //    let ichiimg = UIImage(named: "mondai1.png") as UIImage!
+    //    let niimg = UIImage(named: "mondai2.png") as UIImage!
+    //    let sanimg = UIImage(named: "mondai3.png") as UIImage!
     
     
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Navigation var
+        let thirdViewController = ThirdViewController()
+        let drawerViewController = DrawerViewController()
+        let drawerController     = KYDrawerController()
+        
+        drawerController.mainViewController = UINavigationController()
+        
+        
+        drawerController.drawerViewController = drawerViewController
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.rootViewController = drawerController
+        window?.makeKeyAndVisible()
         
         
         
@@ -58,7 +72,7 @@ class ThirdViewController: UIViewController {
         //中１
         //back image
         let back1 = UIImage(named:"mondai1.png")
-
+        
         let mondai1image = UIImageView(image:back1)
         
         mondai1image.frame = CGRectMake(0, 0, self.view.frame.width*0.95, self.view.frame.height/4)
@@ -71,7 +85,7 @@ class ThirdViewController: UIViewController {
         
         let ichiimg = UIImage(named:"1th4.png")
         let ichibutton = UIButton()
-
+        
         
         ichibutton.tag = 1
         ichibutton.frame = CGRectMake(0, 0, self.view.frame.width*2/5, self.view.frame.width*2/5)
@@ -129,10 +143,10 @@ class ThirdViewController: UIViewController {
         sannenbutton.setImage(sanimg, forState: .Normal)
         sannenbutton.addTarget(self, action: "btn_click:", forControlEvents:.TouchUpInside)
         self.view.addSubview(sannenbutton)
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -142,15 +156,15 @@ class ThirdViewController: UIViewController {
         println("button is clcked!")
     }
     
-
+    
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

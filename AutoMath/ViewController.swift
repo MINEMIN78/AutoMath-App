@@ -7,11 +7,36 @@
 //
 
 import UIKit
+import TwitterKit
 
 class MainViewController: UIViewController {
     
+    var window: UIWindow?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Navigation var
+        let mainViewController = MainViewController()
+        let drawerViewController = DrawerViewController()
+        let drawerController     = KYDrawerController()
+        
+        drawerController.mainViewController = UINavigationController()
+        
+        
+        drawerController.drawerViewController = drawerViewController
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.rootViewController = drawerController
+        window?.makeKeyAndVisible()
+        
+        
+        let logInButton = TWTRLogInButton(logInCompletion: {
+            (session: TWTRSession!, error: NSError!) in
+            // play with Twitter session
+        })
+        logInButton.center = self.view.center
+        self.view.addSubview(logInButton)
         
         
         
@@ -99,9 +124,6 @@ class MainViewController: UIViewController {
         self.view.addSubview(friendbutton)
         self.view.addSubview(infobutton)
         //buttonを生成 end
-        
-        
-        
     }
     
     

@@ -17,8 +17,13 @@
 		752940621B3BFEDE008732C9 /* f-parts8.png in Resources */ = {isa = PBXBuildFile; fileRef = 752940581B3BFEDE008732C9 /* f-parts8.png */; };
 		752940631B3BFEDE008732C9 /* f-parts9.png in Resources */ = {isa = PBXBuildFile; fileRef = 752940591B3BFEDE008732C9 /* f-parts9.png */; };
 		752940641B3BFEDE008732C9 /* f-parts10.png in Resources */ = {isa = PBXBuildFile; fileRef = 7529405A1B3BFEDE008732C9 /* f-parts10.png */; };
+		754353261B3F11D100553AEE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754353251B3F11D100553AEE /* ThirdViewController.swift */; };
+		758A3B3D1B3CD9AE005E5ADD /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758A3B391B3CD9AE005E5ADD /* Fabric.framework */; };
+		758A3B3E1B3CD9AE005E5ADD /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758A3B3A1B3CD9AE005E5ADD /* TwitterKit.framework */; };
+		758A3B3F1B3CD9AE005E5ADD /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 758A3B3B1B3CD9AE005E5ADD /* TwitterKitResources.bundle */; };
+		758A3B401B3CD9AE005E5ADD /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758A3B3C1B3CD9AE005E5ADD /* TwitterCore.framework */; };
+		758A3B421B3CDA0B005E5ADD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758A3B411B3CDA0B005E5ADD /* LoginViewController.swift */; };
 		75E104261B39425200E58275 /* formula1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E104251B39425200E58275 /* formula1.png */; };
-		75E1042A1B39460400E58275 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E104291B39460400E58275 /* ThirdViewController.swift */; };
 		75E1042C1B39464200E58275 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1042B1B39464200E58275 /* SecondViewController.swift */; };
 		75E1042E1B3946F500E58275 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1042D1B3946F500E58275 /* FourthViewController.swift */; };
 		75E104321B39534100E58275 /* 1th4.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E1042F1B39534100E58275 /* 1th4.png */; };
@@ -63,8 +68,13 @@
 		752940581B3BFEDE008732C9 /* f-parts8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f-parts8.png"; sourceTree = "<group>"; };
 		752940591B3BFEDE008732C9 /* f-parts9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f-parts9.png"; sourceTree = "<group>"; };
 		7529405A1B3BFEDE008732C9 /* f-parts10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f-parts10.png"; sourceTree = "<group>"; };
+		754353251B3F11D100553AEE /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		758A3B391B3CD9AE005E5ADD /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		758A3B3A1B3CD9AE005E5ADD /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		758A3B3B1B3CD9AE005E5ADD /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
+		758A3B3C1B3CD9AE005E5ADD /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		758A3B411B3CDA0B005E5ADD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		75E104251B39425200E58275 /* formula1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = formula1.png; sourceTree = "<group>"; };
-		75E104291B39460400E58275 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		75E1042B1B39464200E58275 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		75E1042D1B3946F500E58275 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		75E1042F1B39534100E58275 /* 1th4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1th4.png; sourceTree = "<group>"; };
@@ -97,6 +107,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				758A3B3D1B3CD9AE005E5ADD /* Fabric.framework in Frameworks */,
+				758A3B401B3CD9AE005E5ADD /* TwitterCore.framework in Frameworks */,
+				758A3B3E1B3CD9AE005E5ADD /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,9 +167,10 @@
 				75E1042D1B3946F500E58275 /* FourthViewController.swift */,
 				75F707D51B35FB38005400E2 /* ViewController.swift */,
 				75E1042B1B39464200E58275 /* SecondViewController.swift */,
+				754353251B3F11D100553AEE /* ThirdViewController.swift */,
 				75F707F31B35FC05005400E2 /* DrawerViewController.swift */,
-				75E104291B39460400E58275 /* ThirdViewController.swift */,
 				75F707D71B35FB38005400E2 /* Main.storyboard */,
+				758A3B411B3CDA0B005E5ADD /* LoginViewController.swift */,
 				75E104251B39425200E58275 /* formula1.png */,
 				75E1042F1B39534100E58275 /* 1th4.png */,
 				75E104301B39534100E58275 /* 2th4.png */,
@@ -169,6 +183,10 @@
 				75E6091E1B3AE77700C9CE31 /* tabbar2.png */,
 				75F707DA1B35FB38005400E2 /* Images.xcassets */,
 				75F707DC1B35FB38005400E2 /* LaunchScreen.xib */,
+				758A3B391B3CD9AE005E5ADD /* Fabric.framework */,
+				758A3B3A1B3CD9AE005E5ADD /* TwitterKit.framework */,
+				758A3B3B1B3CD9AE005E5ADD /* TwitterKitResources.bundle */,
+				758A3B3C1B3CD9AE005E5ADD /* TwitterCore.framework */,
 				75F707D11B35FB38005400E2 /* Supporting Files */,
 			);
 			path = AutoMath;
@@ -220,6 +238,7 @@
 				75F707CA1B35FB38005400E2 /* Sources */,
 				75F707CB1B35FB38005400E2 /* Frameworks */,
 				75F707CC1B35FB38005400E2 /* Resources */,
+				758A3B381B3CD9A1005E5ADD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -306,6 +325,7 @@
 				7529405C1B3BFEDE008732C9 /* f-parts2.png in Resources */,
 				75E104331B39534100E58275 /* 2th4.png in Resources */,
 				75E6091F1B3AE77700C9CE31 /* tabbar2.png in Resources */,
+				758A3B3F1B3CD9AE005E5ADD /* TwitterKitResources.bundle in Resources */,
 				75E104341B39534100E58275 /* 3th4.png in Resources */,
 				75F707DE1B35FB38005400E2 /* LaunchScreen.xib in Resources */,
 				7529405F1B3BFEDE008732C9 /* f-parts5.png in Resources */,
@@ -325,6 +345,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		758A3B381B3CD9A1005E5ADD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run d4e283a4b400218449d40de816c96ed42b5da60d c7423e687f186a332ac48da4a867af924869492f0a2a89a5a387d07c86a6cfbd";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		75F707CA1B35FB38005400E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -332,12 +368,13 @@
 			files = (
 				75E1042C1B39464200E58275 /* SecondViewController.swift in Sources */,
 				75F708001B35FC24005400E2 /* KYEmbedDrawerControllerSegue.swift in Sources */,
+				754353261B3F11D100553AEE /* ThirdViewController.swift in Sources */,
 				75F708011B35FC24005400E2 /* KYEmbedMainControllerSegue.swift in Sources */,
 				75E1042E1B3946F500E58275 /* FourthViewController.swift in Sources */,
 				75F707D61B35FB38005400E2 /* ViewController.swift in Sources */,
 				75F707D41B35FB38005400E2 /* AppDelegate.swift in Sources */,
 				75F707F41B35FC05005400E2 /* DrawerViewController.swift in Sources */,
-				75E1042A1B39460400E58275 /* ThirdViewController.swift in Sources */,
+				758A3B421B3CDA0B005E5ADD /* LoginViewController.swift in Sources */,
 				75F707FF1B35FC24005400E2 /* KYDrawerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +502,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AutoMath",
+				);
 				INFOPLIST_FILE = AutoMath/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -475,6 +516,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AutoMath",
+				);
 				INFOPLIST_FILE = AutoMath/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
