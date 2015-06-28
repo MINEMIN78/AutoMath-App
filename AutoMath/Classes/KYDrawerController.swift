@@ -124,44 +124,6 @@ public class KYDrawerController: UIViewController, UIGestureRecognizerDelegate {
         }
     }
     
-    //test
-    public var secondViewController: UIViewController! {
-        didSet {
-            if let oldController = oldValue {
-                oldController.willMoveToParentViewController(nil)
-                oldController.view.removeFromSuperview()
-                oldController.removeFromParentViewController()
-            }
-            if let secondsViewController = secondViewController {
-                let viewDictionary      = ["mainView" : secondViewController.view]
-                var constraints = [AnyObject]()
-                secondViewController.view.setTranslatesAutoresizingMaskIntoConstraints(false)
-                addChildViewController(secondViewController)
-                view.insertSubview(secondViewController.view, atIndex: 0)
-                view.addConstraints(
-                    NSLayoutConstraint.constraintsWithVisualFormat(
-                        "V:|-0-[mainView]-0-|",
-                        options: .allZeros,
-                        metrics: nil,
-                        views: viewDictionary
-                    )
-                )
-                view.addConstraints(
-                    NSLayoutConstraint.constraintsWithVisualFormat(
-                        "H:|-0-[mainView]-0-|",
-                        options: .allZeros,
-                        metrics: nil,
-                        views: viewDictionary
-                    )
-                )
-                secondViewController.didMoveToParentViewController(self)
-            }
-        }
-    }
-
-    //test end
-    
-    
     
     public var drawerViewController : UIViewController? {
         didSet {
@@ -252,6 +214,7 @@ public class KYDrawerController: UIViewController, UIGestureRecognizerDelegate {
             )
         )
         _containerView.hidden = true
+        
         
         if let mainSegueID = mainSegueIdentifier {
             performSegueWithIdentifier(mainSegueID, sender: self)

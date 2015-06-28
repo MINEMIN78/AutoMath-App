@@ -38,9 +38,7 @@ class MainViewController: UIViewController {
         logInButton.center = self.view.center
         self.view.addSubview(logInButton)
         
-        
-        
-        
+     
         // Do any additional setup after loading the view.
         
     //グラデーション start
@@ -124,6 +122,8 @@ class MainViewController: UIViewController {
         self.view.addSubview(friendbutton)
         self.view.addSubview(infobutton)
         //buttonを生成 end
+        
+        
     }
     
     

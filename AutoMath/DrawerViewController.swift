@@ -172,24 +172,31 @@ class DrawerViewController: UIViewController {
     }
     
     func didTaphomebutton(sender: UIButton) {
+        
         if let drawerController = parentViewController as? KYDrawerController {
             drawerController.setDrawerState(.Closed, animated: true)
-            // 遷移するViewを定義する.
-            let myMainViewController: UIViewController = MainViewController()
             
-            // アニメーションを設定する.
-            myMainViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+
+        
             
-            // Viewの移動する.
-            self.presentViewController(myMainViewController, animated: true, completion: nil)
-            
+        
+        
         }
+        
+        // 遷移するViewを定義する.
+        let myMainViewController: UIViewController = MainViewController()
+        
+        // アニメーションを設定する.
+        myMainViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        
+        // Viewの移動する.
+        self.presentViewController(myMainViewController, animated: true, completion: nil)
     }
     
     func didTapformulabutton(sender: UIButton) {
         if let drawerController = parentViewController as? KYDrawerController {
             drawerController.setDrawerState(.Closed, animated: true)
-    
+            
             
             // 遷移するViewを定義する.
             let mySecondViewController: UIViewController = SecondViewController()
@@ -205,25 +212,23 @@ class DrawerViewController: UIViewController {
     
     func didTapquizbutton(sender: UIButton) {
         
-//        if let drawerController = parentViewController as? KYDrawerController {
-//            drawerController.setDrawerState(.Closed, animated: true)
-//            // 遷移するViewを定義する.
-//            let myThirdViewController: UIViewController = ThirdViewController()
-//            
-//            // アニメーションを設定する.
-//            myThirdViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-//            
-//            // Viewの移動する.
-//            self.presentViewController(myThirdViewController, animated: true, completion: nil)
-        
-        
+        if let drawerController = parentViewController as? KYDrawerController {
+            drawerController.setDrawerState(.Closed, animated: true)
+            // 遷移するViewを定義する.
+            let myThirdViewController: UIViewController = ThirdViewController()
+            
+            // アニメーションを設定する.
+            myThirdViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+            
+            // Viewの移動する.
+            self.presentViewController(myThirdViewController, animated: true, completion: nil)
             
             var newRootVC = ThirdViewController()
             var navigationController = UINavigationController(rootViewController: newRootVC)
         
             UIApplication.sharedApplication().keyWindow?.rootViewController = navigationController
         
-//    }
+    }
     }
     
     

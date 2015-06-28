@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UINavigationController{
+class SecondViewController: UIViewController{
     
 
     var window: UIWindow?
@@ -35,7 +35,7 @@ class SecondViewController: UINavigationController{
         window?.rootViewController = drawerController
         window?.makeKeyAndVisible()
         
-        
+
         
 
         // Do any additional setup after loading the view.

@@ -18,6 +18,7 @@
 		752940631B3BFEDE008732C9 /* f-parts9.png in Resources */ = {isa = PBXBuildFile; fileRef = 752940591B3BFEDE008732C9 /* f-parts9.png */; };
 		752940641B3BFEDE008732C9 /* f-parts10.png in Resources */ = {isa = PBXBuildFile; fileRef = 7529405A1B3BFEDE008732C9 /* f-parts10.png */; };
 		754353261B3F11D100553AEE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754353251B3F11D100553AEE /* ThirdViewController.swift */; };
+		756EA6C91B3FBCE100B58CC4 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EA6C81B3FBCE100B58CC4 /* QuizViewController.swift */; };
 		758A3B3D1B3CD9AE005E5ADD /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758A3B391B3CD9AE005E5ADD /* Fabric.framework */; };
 		758A3B3E1B3CD9AE005E5ADD /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758A3B3A1B3CD9AE005E5ADD /* TwitterKit.framework */; };
 		758A3B3F1B3CD9AE005E5ADD /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 758A3B3B1B3CD9AE005E5ADD /* TwitterKitResources.bundle */; };
@@ -69,6 +70,7 @@
 		752940591B3BFEDE008732C9 /* f-parts9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f-parts9.png"; sourceTree = "<group>"; };
 		7529405A1B3BFEDE008732C9 /* f-parts10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f-parts10.png"; sourceTree = "<group>"; };
 		754353251B3F11D100553AEE /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		756EA6C81B3FBCE100B58CC4 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		758A3B391B3CD9AE005E5ADD /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		758A3B3A1B3CD9AE005E5ADD /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		758A3B3B1B3CD9AE005E5ADD /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				75F707D51B35FB38005400E2 /* ViewController.swift */,
 				75E1042B1B39464200E58275 /* SecondViewController.swift */,
 				754353251B3F11D100553AEE /* ThirdViewController.swift */,
+				756EA6C81B3FBCE100B58CC4 /* QuizViewController.swift */,
 				75F707F31B35FC05005400E2 /* DrawerViewController.swift */,
 				75F707D71B35FB38005400E2 /* Main.storyboard */,
 				758A3B411B3CDA0B005E5ADD /* LoginViewController.swift */,
@@ -374,6 +377,7 @@
 				75F707D61B35FB38005400E2 /* ViewController.swift in Sources */,
 				75F707D41B35FB38005400E2 /* AppDelegate.swift in Sources */,
 				75F707F41B35FC05005400E2 /* DrawerViewController.swift in Sources */,
+				756EA6C91B3FBCE100B58CC4 /* QuizViewController.swift in Sources */,
 				758A3B421B3CDA0B005E5ADD /* LoginViewController.swift in Sources */,
 				75F707FF1B35FC24005400E2 /* KYDrawerController.swift in Sources */,
 			);

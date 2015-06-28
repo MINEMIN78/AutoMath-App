@@ -10,7 +10,6 @@ import UIKit
 
 class ThirdViewController: UIViewController {
     
-    
     var window: UIWindow?
     
     //    let ichiimg = UIImage(named: "mondai1.png") as UIImage!
@@ -23,23 +22,19 @@ class ThirdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Navigation var
-        let thirdViewController = ThirdViewController()
-        let drawerViewController = DrawerViewController()
-        let drawerController     = KYDrawerController()
-        
-        drawerController.mainViewController = UINavigationController()
-        
-        
-        drawerController.drawerViewController = drawerViewController
-        
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.rootViewController = drawerController
-        window?.makeKeyAndVisible()
-        
-        
-        
-        
+//        //Navigation var
+//        let thirdViewController = ThirdViewController()
+//        let drawerViewController = DrawerViewController()
+//        let drawerController     = KYDrawerController()
+//        
+//        drawerController.mainViewController = UINavigationController()
+//        
+//        
+//        drawerController.drawerViewController = drawerViewController
+//        
+//        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+//        window?.rootViewController = drawerController
+//        window?.makeKeyAndVisible()
         
         
         //グラデーション start
@@ -91,7 +86,7 @@ class ThirdViewController: UIViewController {
         ichibutton.frame = CGRectMake(0, 0, self.view.frame.width*2/5, self.view.frame.width*2/5)
         ichibutton.layer.position = CGPoint(x: self.view.frame.width/4, y:self.view.frame.height/4-20)
         ichibutton.setImage(ichiimg, forState: .Normal)
-        ichibutton.addTarget(self, action: "btn_click:", forControlEvents:.TouchUpInside)
+        ichibutton.addTarget(self, action: "first:", forControlEvents:.TouchUpInside)
         
         self.view.addSubview(ichibutton)
         
@@ -116,7 +111,7 @@ class ThirdViewController: UIViewController {
         nibutton.frame = CGRectMake(0, 0, self.view.frame.width*2/5, self.view.frame.width*2/5)
         nibutton.layer.position = CGPoint(x: self.view.frame.width/4, y:self.view.frame.height/2)
         nibutton.setImage(niimg, forState: .Normal)
-        nibutton.addTarget(self, action: "btn_click:", forControlEvents:.TouchUpInside)
+        nibutton.addTarget(self, action: "second:", forControlEvents:.TouchUpInside)
         
         self.view.addSubview(nibutton)
         
@@ -141,7 +136,7 @@ class ThirdViewController: UIViewController {
         sannenbutton.frame = CGRectMake(0, 0, self.view.frame.width*2/5, self.view.frame.width*2/5)
         sannenbutton.layer.position = CGPoint(x: self.view.frame.width/4, y:self.view.frame.height*3/4+20)
         sannenbutton.setImage(sanimg, forState: .Normal)
-        sannenbutton.addTarget(self, action: "btn_click:", forControlEvents:.TouchUpInside)
+        sannenbutton.addTarget(self, action: "third:", forControlEvents:.TouchUpInside)
         self.view.addSubview(sannenbutton)
         
         // Do any additional setup after loading the view.
@@ -155,6 +150,51 @@ class ThirdViewController: UIViewController {
     func btn_click(sender: UIButton){
         println("button is clcked!")
     }
+    
+    func first(sender: UIButton){
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //インスタンスの取得
+        appDelegate.message = "1"
+        
+        // 遷移するViewを定義する.
+        let myQuizViewController: UIViewController = QuizViewController()
+        
+        // アニメーションを設定する.
+        myQuizViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        
+        // Viewの移動する.
+        self.presentViewController(myQuizViewController, animated: true, completion: nil)
+        
+    }
+    func second(sender: UIButton){
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //インスタンスの取得
+        appDelegate.message = "2"
+        
+        // 遷移するViewを定義する.
+        let myQuizViewController: UIViewController = QuizViewController()
+        
+        // アニメーションを設定する.
+        myQuizViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        
+        // Viewの移動する.
+        self.presentViewController(myQuizViewController, animated: true, completion: nil)
+        
+    }
+    func third(sender: UIButton){
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //インスタンスの取得
+        appDelegate.message = "3"
+        
+        // 遷移するViewを定義する.
+        let myQuizViewController: UIViewController = QuizViewController()
+        
+        // アニメーションを設定する.
+        myQuizViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        
+        // Viewの移動する.
+        self.presentViewController(myQuizViewController, animated: true, completion: nil)
+        
+    }
+    
+    
     
     
     /*
