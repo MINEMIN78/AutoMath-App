@@ -11,33 +11,11 @@ import UIKit
 class SecondViewController: UIViewController{
     
 
-    var window: UIWindow?
-
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Navigation var
-        let secondViewController = SecondViewController()
-        let drawerViewController = DrawerViewController()
-        let drawerController     = KYDrawerController()
-        
-
-        
-        drawerController.mainViewController = UINavigationController()
-        
-        
-        drawerController.drawerViewController = drawerViewController
-        
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        
-        window?.rootViewController = drawerController
-        window?.makeKeyAndVisible()
-        
-
-        
-
         // Do any additional setup after loading the view.
         
 
@@ -137,8 +115,6 @@ class SecondViewController: UIViewController{
         
         
 
-
-        
         
     }
     
@@ -148,6 +124,7 @@ class SecondViewController: UIViewController{
         // Dispose of any resources that can be recreated.
     }
     
+
 
     
     

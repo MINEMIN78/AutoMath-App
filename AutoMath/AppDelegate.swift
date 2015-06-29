@@ -11,6 +11,7 @@ import Fabric
 import TwitterKit
 
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -22,38 +23,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        
         Fabric.with([Twitter()])
+        
 
         // Override point for customization after application launch.
         
         let mainViewController   = MainViewController()
-
+        let secondViewController   = SecondViewController()
+        let thirdViewController   = ThirdViewController()
         let drawerViewController = DrawerViewController()
         let drawerController     = KYDrawerController()
-        
-        let loginViewController = LoginViewController()
 
-        
+        let loginViewController = LoginViewController()
 
         drawerController.mainViewController = UINavigationController(
             rootViewController: mainViewController
         )
-
         
-
-        
-
-        
-
         
         drawerController.drawerViewController = drawerViewController
-        
         
         /* Customize
         drawerController.drawerDirection = .Right
         drawerController.drawerWidth     = 300
         */
-        
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = drawerController
         window?.makeKeyAndVisible()

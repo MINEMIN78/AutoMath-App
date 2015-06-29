@@ -15,8 +15,7 @@ class DrawerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
+
 
         // Do any additional setup after loading the view.
         
@@ -194,20 +193,31 @@ class DrawerViewController: UIViewController {
     }
     
     func didTapformulabutton(sender: UIButton) {
+        
         if let drawerController = parentViewController as? KYDrawerController {
             drawerController.setDrawerState(.Closed, animated: true)
             
             
-            // 遷移するViewを定義する.
-            let mySecondViewController: UIViewController = SecondViewController()
-            
-            // アニメーションを設定する.
-            mySecondViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-            
-            // Viewの移動する.
-            self.presentViewController(mySecondViewController, animated: true, completion: nil)
+//            // 遷移するViewを定義する.
+//            let mySecondViewController: UIViewController = SecondViewController()
+//            
+//            // アニメーションを設定する.
+//            mySecondViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+//            
+//            // Viewの移動する.
+//            self.presentViewController(mySecondViewController, animated: true, completion: nil)
+
             
         }
+        
+        var newRootVC = SecondViewController()
+        var navigationController = UINavigationController(rootViewController: newRootVC)
+        
+        
+        UIApplication.sharedApplication().keyWindow?.rootViewController = navigationController
+
+
+        
     }
     
     func didTapquizbutton(sender: UIButton) {
