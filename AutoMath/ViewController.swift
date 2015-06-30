@@ -11,7 +11,7 @@ import TwitterKit
 
 class MainViewController: UIViewController {
     
-    var window: UIWindow?
+    private var myWindow: UIWindow!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +29,10 @@ class MainViewController: UIViewController {
 //        window = UIWindow(frame: UIScreen.mainScreen().bounds)
 //        window?.rootViewController = drawerController
 //        window?.makeKeyAndVisible()
+//        window!.windowLevel = UIWindowLevelNormal - 0.1
+        
+        
+
         
         
         let logInButton = TWTRLogInButton(logInCompletion: {
@@ -123,11 +127,8 @@ class MainViewController: UIViewController {
         self.view.addSubview(infobutton)
         //buttonを生成 end
         
-        
     }
     
-    
-    
-    
+
     
 }

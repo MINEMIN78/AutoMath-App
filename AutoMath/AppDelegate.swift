@@ -31,10 +31,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let mainViewController   = MainViewController()
-        let secondViewController   = SecondViewController()
-        let thirdViewController   = ThirdViewController()
         let drawerViewController = DrawerViewController()
         let drawerController     = KYDrawerController()
+        
+        let drawer = drawerController.mainViewController
 
         let loginViewController = LoginViewController()
 
@@ -47,8 +47,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         /* Customize
         drawerController.drawerDirection = .Right
-        drawerController.drawerWidth     = 300
+        drawerController.drawerWidth = 300
         */
+        
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = drawerController
         window?.makeKeyAndVisible()

@@ -8,10 +8,53 @@
 
 import UIKit
 
-class QuizViewController: UIViewController {
+class QuizViewController: UIViewController, UIScrollViewDelegate {
+    
+    var _pageControl: UIPageControl!
+    var _scrollView: UIScrollView!
+    var _displaySize:CGRect = UIScreen.mainScreen().bounds
+    
+    // デバイスのサイズ取得
+    var _devPageValu:Float = Float()
+    var _devViewValue:Float = Float()
+    var _devViewValue2:Float = Float()
+    
+    @IBOutlet weak var _barButton: UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor.whiteColor()
+        
+
+        //test
+        // デバイス毎のサイズを変数で取得する為のfunc
+        self.disp()
+        
+        // ビューの縦、横のサイズを取得する.
+        let width = self.view.frame.maxX, height = self.view.frame.maxY*2/3
+        
+        // ScrollViewを取得する.
+        _scrollView = UIScrollView(frame: self.view.frame)
+        
+        // ページ数を定義する.
+        let pageSize = 4
+        
+        // 縦方向と、横方向のスクロール状態のバーの表示・非表示
+        _scrollView.showsHorizontalScrollIndicator = false
+        _scrollView.showsVerticalScrollIndicator = false
+        
+        // ページングを許可する.
+        _scrollView.pagingEnabled = true
+        
+        // ScrollViewのデリゲートを設定する.
+        _scrollView.delegate = self
+        
+        // スクロールの画面サイズを指定する.
+        _scrollView.contentSize = CGSizeMake(CGFloat(pageSize) * width, 0)
+        
+        // ScrollViewをViewに追加する.
+        self.view.addSubview(_scrollView)
         
         
         //値受け渡し
@@ -20,141 +63,116 @@ class QuizViewController: UIViewController {
         
         //問題配置
         if message == "1" {
-            //UIImageに画像の名前を指定します
-            let imgQ1 = UIImage(named: "1-1.png")
-            let imgQ2 = UIImage(named: "1-2.png")
-            let imgQ3 = UIImage(named: "1-3.png")
+
+            //test
+            // ページ数分ボタンを生成する.
+            for var i = 0; i < pageSize; i++ {
+                
+                var imageArray = ["1-1.png","1-2.png","1-3.png","1-4.png"]
+                
+                var image:UIImage? = UIImage(named:imageArray[i])!
+                var imageView:UIImageView = UIImageView(image:image)
+                imageView.frame = CGRectMake(CGFloat(i) * width + width/12 - CGFloat(_devViewValue), height/100 - CGFloat(_devViewValue2), width, height*1.5)
+
+                imageView.contentMode = UIViewContentMode.ScaleAspectFit
+                
+                _scrollView.addSubview(imageView)
+            }
             
-            //UIImageViewにUIIimageを追加
-            let Q1 = UIImageView(image: imgQ1)
-            let Q2 = UIImageView(image: imgQ2)
-            let Q3 = UIImageView(image: imgQ3)
+            // PageControlを作成する.
+            _pageControl = UIPageControl(frame: CGRectMake(0, self.view.frame.maxY - CGFloat(_devPageValu), width, 50))
             
-            //UIScrollViewを作成します
-            let scrView = UIScrollView()
+            // PageControlするページ数を設定する.
+            _pageControl.numberOfPages = pageSize
             
-            //UIScrollViewの1ページ分のサイズ + 表示位置
-            scrView.frame = CGRectMake(0, 50, self.view.frame.width, self.view.frame.height*2/3)
+            // 現在ページを設定する.
+            _pageControl.currentPage = 0
+            _pageControl.userInteractionEnabled = false
             
-            //全体のサイズ
-            scrView.contentSize = CGSizeMake(self.view.frame.width*3, self.view.frame.height*2/3)
+            // pageControlカラー
+            // 全体の点の色
+            _pageControl.pageIndicatorTintColor = UIColor.redColor()
+            // 現在の点の色
+            _pageControl.currentPageIndicatorTintColor = UIColor.whiteColor()
             
-            //UIImageViewのサイズと位置を決めます
-            Q1.frame = CGRectMake(0, 10, self.view.frame.width, self.view.frame.height*2/3)
-            Q2.frame = CGRectMake(self.view.frame.width, 10, self.view.frame.width, self.view.frame.height*2/3)
-            Q3.frame = CGRectMake(self.view.frame.width*2, 10, self.view.frame.width, self.view.frame.height*2/3)
+            self.view.addSubview(_pageControl)
             
-            //viewに追加します
-            self.view.addSubview(scrView)
             
-            //UIImageViewをScrollViewに追加します
-            scrView.addSubview(Q1)
-            scrView.addSubview(Q2)
-            scrView.addSubview(Q3)
-            
-            // １ページ単位でスクロールさせる
-            scrView.pagingEnabled = true
         }else if message == "2"{
-            //UIImageに画像の名前を指定します
-//            let imgQ1 = UIImage(named: "3-1.png")
-            let imgQ2 = UIImage(named: "2-2.png")
-            let imgQ3 = UIImage(named: "2-3.png")
+            //test
+            // ページ数分ボタンを生成する.
+            for var i = 0; i < pageSize; i++ {
+                
+                var imageArray = ["3-1.png","2-2.png","2-3.png","1-4.png"]
+                
+                var image:UIImage? = UIImage(named:imageArray[i])!
+                var imageView:UIImageView = UIImageView(image:image)
+                imageView.frame = CGRectMake(CGFloat(i) * width + width/12 - CGFloat(_devViewValue), height/100 - CGFloat(_devViewValue2), width, height*1.5)
+                
+                
+                
+                
+                imageView.contentMode = UIViewContentMode.ScaleAspectFit
+                
+                _scrollView.addSubview(imageView)
+            }
             
-            //UIImageViewにUIIimageを追加
-//            let Q1 = UIImageView(image: imgQ1)
-            let Q2 = UIImageView(image: imgQ2)
-            let Q3 = UIImageView(image: imgQ3)
+            // PageControlを作成する.
+            _pageControl = UIPageControl(frame: CGRectMake(0, self.view.frame.maxY - CGFloat(_devPageValu), width, 50))
             
-            //UIScrollViewを作成します
-            let scrView = UIScrollView()
+            // PageControlするページ数を設定する.
+            _pageControl.numberOfPages = pageSize
             
-            //UIScrollViewの1ページ分のサイズ + 表示位置
-            scrView.frame = CGRectMake(0, 50, self.view.frame.width, self.view.frame.height*2/3)
+            // 現在ページを設定する.
+            _pageControl.currentPage = 0
+            _pageControl.userInteractionEnabled = false
             
-            //全体のサイズ
-            scrView.contentSize = CGSizeMake(self.view.frame.width*3, self.view.frame.height*2/3)
+            // pageControlカラー
+            // 全体の点の色
+            _pageControl.pageIndicatorTintColor = UIColor.redColor()
+            // 現在の点の色
+            _pageControl.currentPageIndicatorTintColor = UIColor.whiteColor()
             
-            //UIImageViewのサイズと位置を決めます
-//            Q1.frame = CGRectMake(0, 10, self.view.frame.width, self.view.frame.height*2/3)
-            Q2.frame = CGRectMake(self.view.frame.width, 10, self.view.frame.width, self.view.frame.height*2/3)
-            Q3.frame = CGRectMake(self.view.frame.width*2, 10, self.view.frame.width, self.view.frame.height*2/3)
+            self.view.addSubview(_pageControl)
             
-            //viewに追加します
-            self.view.addSubview(scrView)
-            
-            //UIImageViewをScrollViewに追加します
-//            scrView.addSubview(Q1)
-            scrView.addSubview(Q2)
-            scrView.addSubview(Q3)
-            
-            // １ページ単位でスクロールさせる
-            scrView.pagingEnabled = true
         }else if message == "3"{
-            //UIImageに画像の名前を指定します
-            let imgQ1 = UIImage(named: "3-1.png")
-            let imgQ2 = UIImage(named: "3-2.png")
-            let imgQ3 = UIImage(named: "3-3.png")
+            //test
+            // ページ数分ボタンを生成する.
+            for var i = 0; i < pageSize; i++ {
+                
+                var imageArray = ["3-1.png","3-2.png","3-3.png","1-4.png"]
+                
+                var image:UIImage? = UIImage(named:imageArray[i])!
+                var imageView:UIImageView = UIImageView(image:image)
+                imageView.frame = CGRectMake(CGFloat(i) * width + width/12 - CGFloat(_devViewValue), height/100 - CGFloat(_devViewValue2), width, height*1.5)
+                
+                
+                
+                
+                imageView.contentMode = UIViewContentMode.ScaleAspectFit
+                
+                _scrollView.addSubview(imageView)
+            }
             
-            //UIImageViewにUIIimageを追加
-            let Q1 = UIImageView(image: imgQ1)
-            let Q2 = UIImageView(image: imgQ2)
-            let Q3 = UIImageView(image: imgQ3)
+            // PageControlを作成する.
+            _pageControl = UIPageControl(frame: CGRectMake(0, self.view.frame.maxY - CGFloat(_devPageValu), width, 50))
             
-            //UIScrollViewを作成します
-            let scrView = UIScrollView()
+            // PageControlするページ数を設定する.
+            _pageControl.numberOfPages = pageSize
             
-            //UIScrollViewの1ページ分のサイズ + 表示位置
-            scrView.frame = CGRectMake(0, 50, self.view.frame.width, self.view.frame.height*2/3)
+            // 現在ページを設定する.
+            _pageControl.currentPage = 0
+            _pageControl.userInteractionEnabled = false
             
-            //全体のサイズ
-            scrView.contentSize = CGSizeMake(self.view.frame.width*3, self.view.frame.height*2/3)
+            // pageControlカラー
+            // 全体の点の色
+            _pageControl.pageIndicatorTintColor = UIColor.redColor()
+            // 現在の点の色
+            _pageControl.currentPageIndicatorTintColor = UIColor.whiteColor()
             
-            //UIImageViewのサイズと位置を決めます
-            Q1.frame = CGRectMake(0, 10, self.view.frame.width, self.view.frame.height*2/3)
-            Q2.frame = CGRectMake(self.view.frame.width, 10, self.view.frame.width, self.view.frame.height*2/3)
-            Q3.frame = CGRectMake(self.view.frame.width*2, 10, self.view.frame.width, self.view.frame.height*2/3)
-            
-            //viewに追加します
-            self.view.addSubview(scrView)
-            
-            //UIImageViewをScrollViewに追加します
-            scrView.addSubview(Q1)
-            scrView.addSubview(Q2)
-            scrView.addSubview(Q3)
-            
-            // １ページ単位でスクロールさせる
-            scrView.pagingEnabled = true
-            
-            
+            self.view.addSubview(_pageControl)
 
         }
-        
-        //グラデーション start
-        
-        //グラデーションの開始色
-        let topColor = UIColor(red:0.93, green:0.93, blue:0.94, alpha:1.0)
-        //グラデーションの開始色
-        let bottomColor = UIColor(red:0.82, green:0.95, blue:1.00, alpha:1.0)
-        
-        
-        //グラデーションの色を配列で管理
-        let gradientColors: [CGColor] = [topColor.CGColor, bottomColor.CGColor]
-        
-        //グラデーションレイヤーを作成
-        let gradientLayer: CAGradientLayer = CAGradientLayer()
-        
-        //グラデーションの色をレイヤーに割り当てる
-        gradientLayer.colors = gradientColors
-        //グラデーションレイヤーをスクリーンサイズにする
-        gradientLayer.frame = self.view.bounds
-        
-        //グラデーションレイヤーをビューの一番下に配置
-        self.view.layer.insertSublayer(gradientLayer, atIndex: 0)
-        
-        
-        //グラデーション end
-        
-
 
 
         // Do any additional setup after loading the view.
@@ -163,6 +181,44 @@ class QuizViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //test
+    // スクロールした時
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        
+        // スクロール数が1ページ分になったら時.
+        if fmod(scrollView.contentOffset.x, scrollView.frame.maxX) == 0 {
+            // ページの場所を切り替える.
+            _pageControl.currentPage = Int(scrollView.contentOffset.x / scrollView.frame.maxX)
+        }
+    }
+    
+    
+    
+    //
+    func disp() {
+        // デバイスの高さ取得
+        var _devicesHeight = _displaySize.height
+        
+        if _devicesHeight == 568.0 {
+            // iPhone5,5sの設定
+            _devViewValue = 32.0
+            _devViewValue2 = 40.0
+            _devPageValu = 50.0
+            
+        } else if _devicesHeight == 667 {
+            // iPhone6の設定
+            _devViewValue = 38.0
+            _devViewValue2 = 40.0
+            _devPageValu = 50.0
+            
+        } else {
+            // iPhone6 Plus
+            _devViewValue = 42.0
+            _devViewValue2 = 44.0
+            _devPageValu = 60.0
+        }
     }
     
     

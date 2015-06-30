@@ -155,42 +155,39 @@ class ThirdViewController: UIViewController {
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //インスタンスの取得
         appDelegate.message = "1"
         
-        // 遷移するViewを定義する.
-        let myQuizViewController: UIViewController = QuizViewController()
+//        // 遷移するViewを定義する.
+//        let myQuizViewController: UIViewController = QuizViewController()
+//        
+//        // アニメーションを設定する.
+//        myQuizViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+//        
+//        // Viewの移動する.
+//        self.presentViewController(myQuizViewController, animated: true, completion: nil)
         
-        // アニメーションを設定する.
-        myQuizViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        var newRootVC = QuizViewController()
+        var navigationController = UINavigationController(rootViewController: newRootVC)
         
-        // Viewの移動する.
-        self.presentViewController(myQuizViewController, animated: true, completion: nil)
+        UIApplication.sharedApplication().keyWindow?.rootViewController = navigationController
         
     }
     func second(sender: UIButton){
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //インスタンスの取得
         appDelegate.message = "2"
         
-        // 遷移するViewを定義する.
-        let myQuizViewController: UIViewController = QuizViewController()
+        var newRootVC = QuizViewController()
+        var navigationController = UINavigationController(rootViewController: newRootVC)
         
-        // アニメーションを設定する.
-        myQuizViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-        
-        // Viewの移動する.
-        self.presentViewController(myQuizViewController, animated: true, completion: nil)
+        UIApplication.sharedApplication().keyWindow?.rootViewController = navigationController
         
     }
     func third(sender: UIButton){
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //インスタンスの取得
         appDelegate.message = "3"
         
-        // 遷移するViewを定義する.
-        let myQuizViewController: UIViewController = QuizViewController()
+        var newRootVC = QuizViewController()
+        var navigationController = UINavigationController(rootViewController: newRootVC)
         
-        // アニメーションを設定する.
-        myQuizViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-        
-        // Viewの移動する.
-        self.presentViewController(myQuizViewController, animated: true, completion: nil)
+        UIApplication.sharedApplication().keyWindow?.rootViewController = navigationController
         
     }
     

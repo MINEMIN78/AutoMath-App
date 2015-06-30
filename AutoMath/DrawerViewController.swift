@@ -16,6 +16,8 @@ class DrawerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+       
+        
 
         // Do any additional setup after loading the view.
         
@@ -174,11 +176,7 @@ class DrawerViewController: UIViewController {
         
         if let drawerController = parentViewController as? KYDrawerController {
             drawerController.setDrawerState(.Closed, animated: true)
-            
 
-        
-            
-        
         
         }
         
@@ -190,6 +188,11 @@ class DrawerViewController: UIViewController {
         
         // Viewの移動する.
         self.presentViewController(myMainViewController, animated: true, completion: nil)
+        
+//        var newRootVC = MainViewController()
+//        var navigationController = UINavigationController(rootViewController: newRootVC)
+//        
+//        UIApplication.sharedApplication().keyWindow?.rootViewController = navigationController
     }
     
     func didTapformulabutton(sender: UIButton) {
@@ -224,21 +227,22 @@ class DrawerViewController: UIViewController {
         
         if let drawerController = parentViewController as? KYDrawerController {
             drawerController.setDrawerState(.Closed, animated: true)
-            // 遷移するViewを定義する.
-            let myThirdViewController: UIViewController = ThirdViewController()
+//            // 遷移するViewを定義する.
+//            let myThirdViewController: UIViewController = ThirdViewController()
+//            
+//            // アニメーションを設定する.
+//            myThirdViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+//            
+//            // Viewの移動する.
+//            self.presentViewController(myThirdViewController, animated: true, completion: nil)
             
-            // アニメーションを設定する.
-            myThirdViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-            
-            // Viewの移動する.
-            self.presentViewController(myThirdViewController, animated: true, completion: nil)
-            
-            var newRootVC = ThirdViewController()
-            var navigationController = UINavigationController(rootViewController: newRootVC)
         
-            UIApplication.sharedApplication().keyWindow?.rootViewController = navigationController
+        }
         
-    }
+        var newRootVC = ThirdViewController()
+        var navigationController = UINavigationController(rootViewController: newRootVC)
+        
+        UIApplication.sharedApplication().keyWindow?.rootViewController = navigationController
     }
     
     

@@ -18,6 +18,8 @@ class SecondViewController: UIViewController{
         
         // Do any additional setup after loading the view.
         
+        let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
 
         
         
