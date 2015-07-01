@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7512E1211B448EB700911199 /* 2-1-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 7512E11D1B448EB600911199 /* 2-1-A.png */; };
+		7512E1221B448EB700911199 /* 2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7512E11E1B448EB700911199 /* 2-1.png */; };
+		7512E1231B448EB700911199 /* 2-4-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 7512E11F1B448EB700911199 /* 2-4-A.png */; };
+		7512E1241B448EB700911199 /* 2-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7512E1201B448EB700911199 /* 2-4.png */; };
 		7529405B1B3BFEDE008732C9 /* f-parts1.png in Resources */ = {isa = PBXBuildFile; fileRef = 752940511B3BFEDE008732C9 /* f-parts1.png */; };
 		7529405C1B3BFEDE008732C9 /* f-parts2.png in Resources */ = {isa = PBXBuildFile; fileRef = 752940521B3BFEDE008732C9 /* f-parts2.png */; };
 		7529405D1B3BFEDE008732C9 /* f-parts3.png in Resources */ = {isa = PBXBuildFile; fileRef = 752940531B3BFEDE008732C9 /* f-parts3.png */; };
@@ -17,6 +21,7 @@
 		752940621B3BFEDE008732C9 /* f-parts8.png in Resources */ = {isa = PBXBuildFile; fileRef = 752940581B3BFEDE008732C9 /* f-parts8.png */; };
 		752940631B3BFEDE008732C9 /* f-parts9.png in Resources */ = {isa = PBXBuildFile; fileRef = 752940591B3BFEDE008732C9 /* f-parts9.png */; };
 		752940641B3BFEDE008732C9 /* f-parts10.png in Resources */ = {isa = PBXBuildFile; fileRef = 7529405A1B3BFEDE008732C9 /* f-parts10.png */; };
+		753D2A3F1B444CDE00580358 /* CalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753D2A3E1B444CDE00580358 /* CalculationViewController.swift */; };
 		754353261B3F11D100553AEE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754353251B3F11D100553AEE /* ThirdViewController.swift */; };
 		756EA6C91B3FBCE100B58CC4 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EA6C81B3FBCE100B58CC4 /* QuizViewController.swift */; };
 		756EA6D71B413C4400B58CC4 /* 2-2-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 756EA6CB1B413C4400B58CC4 /* 2-2-A.png */; };
@@ -81,6 +86,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7512E11D1B448EB600911199 /* 2-1-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-1-A.png"; sourceTree = "<group>"; };
+		7512E11E1B448EB700911199 /* 2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-1.png"; sourceTree = "<group>"; };
+		7512E11F1B448EB700911199 /* 2-4-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-4-A.png"; sourceTree = "<group>"; };
+		7512E1201B448EB700911199 /* 2-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-4.png"; sourceTree = "<group>"; };
 		752940511B3BFEDE008732C9 /* f-parts1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f-parts1.png"; sourceTree = "<group>"; };
 		752940521B3BFEDE008732C9 /* f-parts2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f-parts2.png"; sourceTree = "<group>"; };
 		752940531B3BFEDE008732C9 /* f-parts3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f-parts3.png"; sourceTree = "<group>"; };
@@ -91,6 +100,7 @@
 		752940581B3BFEDE008732C9 /* f-parts8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f-parts8.png"; sourceTree = "<group>"; };
 		752940591B3BFEDE008732C9 /* f-parts9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f-parts9.png"; sourceTree = "<group>"; };
 		7529405A1B3BFEDE008732C9 /* f-parts10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f-parts10.png"; sourceTree = "<group>"; };
+		753D2A3E1B444CDE00580358 /* CalculationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculationViewController.swift; sourceTree = "<group>"; };
 		754353251B3F11D100553AEE /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		756EA6C81B3FBCE100B58CC4 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		756EA6CB1B413C4400B58CC4 /* 2-2-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-2-A.png"; sourceTree = "<group>"; };
@@ -220,6 +230,10 @@
 				756EA6CC1B413C4400B58CC4 /* 2-2.png */,
 				756EA6CD1B413C4400B58CC4 /* 2-3-A.png */,
 				756EA6CE1B413C4400B58CC4 /* 2-3.png */,
+				7512E11D1B448EB600911199 /* 2-1-A.png */,
+				7512E11E1B448EB700911199 /* 2-1.png */,
+				7512E11F1B448EB700911199 /* 2-4-A.png */,
+				7512E1201B448EB700911199 /* 2-4.png */,
 			);
 			name = 2nd;
 			sourceTree = "<group>";
@@ -266,6 +280,7 @@
 				75F707D31B35FB38005400E2 /* AppDelegate.swift */,
 				75E1042D1B3946F500E58275 /* FourthViewController.swift */,
 				75F707D51B35FB38005400E2 /* ViewController.swift */,
+				753D2A3E1B444CDE00580358 /* CalculationViewController.swift */,
 				75E1042B1B39464200E58275 /* SecondViewController.swift */,
 				754353251B3F11D100553AEE /* ThirdViewController.swift */,
 				756EA6C81B3FBCE100B58CC4 /* QuizViewController.swift */,
@@ -414,6 +429,7 @@
 			files = (
 				75CF2AF01B42DFE300D7C716 /* 1-4.png in Resources */,
 				752940621B3BFEDE008732C9 /* f-parts8.png in Resources */,
+				7512E1221B448EB700911199 /* 2-1.png in Resources */,
 				75E104261B39425200E58275 /* formula1.png in Resources */,
 				75E1043A1B395A7900E58275 /* mondai3.png in Resources */,
 				756EA6E01B413C4400B58CC4 /* 3-3.png in Resources */,
@@ -425,6 +441,7 @@
 				75E104391B395A7900E58275 /* mondai2.png in Resources */,
 				756EA6EF1B41989200B58CC4 /* 1-2.png in Resources */,
 				756EA6DA1B413C4400B58CC4 /* 2-3.png in Resources */,
+				7512E1211B448EB700911199 /* 2-1-A.png in Resources */,
 				752940601B3BFEDE008732C9 /* f-parts6.png in Resources */,
 				75E104381B395A7900E58275 /* mondai1.png in Resources */,
 				756EA6DE1B413C4400B58CC4 /* 3-2.png in Resources */,
@@ -443,6 +460,7 @@
 				756EA6DF1B413C4400B58CC4 /* 3-3-A.png in Resources */,
 				756EA6DB1B413C4400B58CC4 /* 3-1-A.png in Resources */,
 				75E104331B39534100E58275 /* 2th4.png in Resources */,
+				7512E1231B448EB700911199 /* 2-4-A.png in Resources */,
 				75E6091F1B3AE77700C9CE31 /* tabbar2.png in Resources */,
 				756EA6E11B413C4400B58CC4 /* 3-4-A.png in Resources */,
 				758A3B3F1B3CD9AE005E5ADD /* TwitterKitResources.bundle in Resources */,
@@ -454,6 +472,7 @@
 				756EA6DD1B413C4400B58CC4 /* 3-2-A.png in Resources */,
 				752940631B3BFEDE008732C9 /* f-parts9.png in Resources */,
 				756EA6ED1B41989200B58CC4 /* 1-1.png in Resources */,
+				7512E1241B448EB700911199 /* 2-4.png in Resources */,
 				7529405D1B3BFEDE008732C9 /* f-parts3.png in Resources */,
 				752940611B3BFEDE008732C9 /* f-parts7.png in Resources */,
 			);
@@ -493,6 +512,7 @@
 				75F708001B35FC24005400E2 /* KYEmbedDrawerControllerSegue.swift in Sources */,
 				754353261B3F11D100553AEE /* ThirdViewController.swift in Sources */,
 				75F708011B35FC24005400E2 /* KYEmbedMainControllerSegue.swift in Sources */,
+				753D2A3F1B444CDE00580358 /* CalculationViewController.swift in Sources */,
 				75E1042E1B3946F500E58275 /* FourthViewController.swift in Sources */,
 				75F707D61B35FB38005400E2 /* ViewController.swift in Sources */,
 				75F707D41B35FB38005400E2 /* AppDelegate.swift in Sources */,

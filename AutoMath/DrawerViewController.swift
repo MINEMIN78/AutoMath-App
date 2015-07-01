@@ -90,7 +90,7 @@ class DrawerViewController: UIViewController {
         
         //searchbutton
         searchbutton.addTarget(self,
-            action: "didTapCloseButton:",
+            action: "didTapcalcbutton:",
             forControlEvents: .TouchUpInside
         )
         searchbutton.frame = CGRectMake(0,0,150,iv.frame.height/8)
@@ -243,6 +243,19 @@ class DrawerViewController: UIViewController {
         
         var newRootVC = ThirdViewController()
         var navigationController = UINavigationController(rootViewController: newRootVC)
+        
+        UIApplication.sharedApplication().keyWindow?.rootViewController = navigationController
+    }
+    
+    func didTapcalcbutton(sender: UIButton) {
+        if let drawerController = parentViewController as? KYDrawerController {
+            drawerController.setDrawerState(.Closed, animated: true)
+            
+        }
+        
+        var newRootVC = CalculationViewController()
+        var navigationController = UINavigationController(rootViewController: newRootVC)
+        
         
         UIApplication.sharedApplication().keyWindow?.rootViewController = navigationController
     }

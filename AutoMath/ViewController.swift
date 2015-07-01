@@ -14,11 +14,13 @@ import Accounts
 
 class MainViewController: UIViewController {
     
+    var window: UIWindow?
+    
     private var myWindow: UIWindow!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
 //        //Navigation var
 //        let mainViewController = MainViewController()
 //        let drawerViewController = DrawerViewController()

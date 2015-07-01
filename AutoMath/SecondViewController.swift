@@ -10,7 +10,7 @@ import UIKit
 
 class SecondViewController: UIViewController{
     
-
+    var window: UIWindow?
     
     
     override func viewDidLoad() {
@@ -21,6 +21,20 @@ class SecondViewController: UIViewController{
         let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
 
+        
+//        //Navigation var
+//        let mainViewController = MainViewController()
+//        let drawerViewController = DrawerViewController()
+//        let drawerController     = KYDrawerController()
+//        
+//        drawerController.mainViewController = UINavigationController()
+//        
+//        
+//        drawerController.drawerViewController = drawerViewController
+//        
+//        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+//        window?.rootViewController = drawerController
+//        window?.makeKeyAndVisible()
         
         
     //グラデーション start

@@ -71,7 +71,7 @@ class ThirdViewController: UIViewController {
         let mondai1image = UIImageView(image:back1)
         
         mondai1image.frame = CGRectMake(0, 0, self.view.frame.width*0.95, self.view.frame.height/4)
-        mondai1image.layer.position = CGPoint(x: self.view.frame.width/2, y:self.view.frame.height/4-20)
+        mondai1image.layer.position = CGPoint(x: self.view.frame.width/2, y:self.view.frame.height/4+10)
         
         self.view.addSubview(mondai1image)
         
@@ -84,7 +84,7 @@ class ThirdViewController: UIViewController {
         
         ichibutton.tag = 1
         ichibutton.frame = CGRectMake(0, 0, self.view.frame.width*2/5, self.view.frame.width*2/5)
-        ichibutton.layer.position = CGPoint(x: self.view.frame.width/4, y:self.view.frame.height/4-20)
+        ichibutton.layer.position = CGPoint(x: self.view.frame.width/4, y:self.view.frame.height/4+10)
         ichibutton.setImage(ichiimg, forState: .Normal)
         ichibutton.addTarget(self, action: "first:", forControlEvents:.TouchUpInside)
         
@@ -98,7 +98,7 @@ class ThirdViewController: UIViewController {
         let mondai2image = UIImageView(image:back2)
         
         mondai2image.frame = CGRectMake(0, 0, self.view.frame.width*0.95, self.view.frame.height/4)
-        mondai2image.layer.position = CGPoint(x: self.view.frame.width/2, y:self.view.frame.height/2)
+        mondai2image.layer.position = CGPoint(x: self.view.frame.width/2, y:self.view.frame.height/2+30)
         
         self.view.addSubview(mondai2image)
         
@@ -109,7 +109,7 @@ class ThirdViewController: UIViewController {
         
         nibutton.tag = 2
         nibutton.frame = CGRectMake(0, 0, self.view.frame.width*2/5, self.view.frame.width*2/5)
-        nibutton.layer.position = CGPoint(x: self.view.frame.width/4, y:self.view.frame.height/2)
+        nibutton.layer.position = CGPoint(x: self.view.frame.width/4, y:self.view.frame.height/2+30)
         nibutton.setImage(niimg, forState: .Normal)
         nibutton.addTarget(self, action: "second:", forControlEvents:.TouchUpInside)
         
@@ -123,7 +123,7 @@ class ThirdViewController: UIViewController {
         let mondai3image = UIImageView(image:back3)
         
         mondai3image.frame = CGRectMake(0, 0, self.view.frame.width*0.95, self.view.frame.height/4)
-        mondai3image.layer.position = CGPoint(x: self.view.frame.width/2, y:self.view.frame.height*3/4+20)
+        mondai3image.layer.position = CGPoint(x: self.view.frame.width/2, y:self.view.frame.height*3/4+50)
         
         self.view.addSubview(mondai3image)
         
@@ -134,7 +134,7 @@ class ThirdViewController: UIViewController {
         let sannenbutton = UIButton()
         sannenbutton.tag = 3
         sannenbutton.frame = CGRectMake(0, 0, self.view.frame.width*2/5, self.view.frame.width*2/5)
-        sannenbutton.layer.position = CGPoint(x: self.view.frame.width/4, y:self.view.frame.height*3/4+20)
+        sannenbutton.layer.position = CGPoint(x: self.view.frame.width/4, y:self.view.frame.height*3/4+50)
         sannenbutton.setImage(sanimg, forState: .Normal)
         sannenbutton.addTarget(self, action: "third:", forControlEvents:.TouchUpInside)
         self.view.addSubview(sannenbutton)
@@ -147,49 +147,33 @@ class ThirdViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func btn_click(sender: UIButton){
-        println("button is clcked!")
-    }
-    
-    func first(sender: UIButton){
+
+    internal func first(sender: UIButton){
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //インスタンスの取得
         appDelegate.message = "1"
         
-//        // 遷移するViewを定義する.
-//        let myQuizViewController: UIViewController = QuizViewController()
-//        
-//        // アニメーションを設定する.
-//        myQuizViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-//        
-//        // Viewの移動する.
-//        self.presentViewController(myQuizViewController, animated: true, completion: nil)
-        
-        var newRootVC = QuizViewController()
-        var navigationController = UINavigationController(rootViewController: newRootVC)
-        
-        UIApplication.sharedApplication().keyWindow?.rootViewController = navigationController
+        let newRootVC = QuizViewController()
+        self.navigationController?.pushViewController(newRootVC, animated: true)
         
     }
-    func second(sender: UIButton){
+    internal func second(sender: UIButton){
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //インスタンスの取得
         appDelegate.message = "2"
         
-        var newRootVC = QuizViewController()
-        var navigationController = UINavigationController(rootViewController: newRootVC)
-        
-        UIApplication.sharedApplication().keyWindow?.rootViewController = navigationController
+        let newRootVC = QuizViewController()
+        self.navigationController?.pushViewController(newRootVC, animated: true)
         
     }
-    func third(sender: UIButton){
+    internal func third(sender: UIButton){
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //インスタンスの取得
         appDelegate.message = "3"
         
-        var newRootVC = QuizViewController()
-        var navigationController = UINavigationController(rootViewController: newRootVC)
-        
-        UIApplication.sharedApplication().keyWindow?.rootViewController = navigationController
+        let newRootVC = QuizViewController()
+        self.navigationController?.pushViewController(newRootVC, animated: true)
         
     }
+    
+
     
     
     
