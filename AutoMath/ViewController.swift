@@ -8,6 +8,9 @@
 
 import UIKit
 import TwitterKit
+import Twitter
+import Accounts
+
 
 class MainViewController: UIViewController {
     
@@ -33,7 +36,7 @@ class MainViewController: UIViewController {
         
         
 
-        
+        //twitter機能
         
         let logInButton = TWTRLogInButton(logInCompletion: {
             (session: TWTRSession!, error: NSError!) in
@@ -42,6 +45,13 @@ class MainViewController: UIViewController {
         logInButton.center = self.view.center
         self.view.addSubview(logInButton)
         
+        
+
+        
+        
+    
+    
+    
      
         // Do any additional setup after loading the view.
         
@@ -105,9 +115,9 @@ class MainViewController: UIViewController {
         
         
         //配置場所
-        logbutton.layer.position = CGPoint(x: self.view.frame.width/4, y:100)
-        friendbutton.layer.position = CGPoint(x: self.view.frame.width*2/4, y:100)
-        infobutton.layer.position = CGPoint(x: self.view.frame.width*3/4, y:100)
+        logbutton.layer.position = CGPoint(x: self.view.frame.width/4, y:250)
+        friendbutton.layer.position = CGPoint(x: self.view.frame.width*2/4, y:250)
+        infobutton.layer.position = CGPoint(x: self.view.frame.width*3/4, y:250)
         
         //背景色
         logbutton.backgroundColor = UIColor(red:0.31, green:0.81, blue:1.00, alpha:1.0)
@@ -129,6 +139,5 @@ class MainViewController: UIViewController {
         
     }
     
-
-    
 }
+

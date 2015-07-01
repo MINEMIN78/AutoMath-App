@@ -44,6 +44,8 @@
 		758A3B421B3CDA0B005E5ADD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758A3B411B3CDA0B005E5ADD /* LoginViewController.swift */; };
 		75CF2AF01B42DFE300D7C716 /* 1-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 75CF2AEF1B42DFE300D7C716 /* 1-4.png */; };
 		75CF2AF21B42E12600D7C716 /* 1-4-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 75CF2AF11B42E12600D7C716 /* 1-4-A.png */; };
+		75CF2AF41B439B6900D7C716 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CF2AF31B439B6900D7C716 /* Accounts.framework */; };
+		75CF2B281B439F0700D7C716 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CF2B271B439F0600D7C716 /* Twitter.framework */; };
 		75E104261B39425200E58275 /* formula1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E104251B39425200E58275 /* formula1.png */; };
 		75E1042C1B39464200E58275 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1042B1B39464200E58275 /* SecondViewController.swift */; };
 		75E1042E1B3946F500E58275 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1042D1B3946F500E58275 /* FourthViewController.swift */; };
@@ -116,6 +118,8 @@
 		758A3B411B3CDA0B005E5ADD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		75CF2AEF1B42DFE300D7C716 /* 1-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-4.png"; sourceTree = "<group>"; };
 		75CF2AF11B42E12600D7C716 /* 1-4-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-4-A.png"; sourceTree = "<group>"; };
+		75CF2AF31B439B6900D7C716 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		75CF2B271B439F0600D7C716 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		75E104251B39425200E58275 /* formula1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = formula1.png; sourceTree = "<group>"; };
 		75E1042B1B39464200E58275 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		75E1042D1B3946F500E58275 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CF2B281B439F0700D7C716 /* Twitter.framework in Frameworks */,
+				75CF2AF41B439B6900D7C716 /* Accounts.framework in Frameworks */,
 				758A3B3D1B3CD9AE005E5ADD /* Fabric.framework in Frameworks */,
 				758A3B401B3CD9AE005E5ADD /* TwitterCore.framework in Frameworks */,
 				758A3B3E1B3CD9AE005E5ADD /* TwitterKit.framework in Frameworks */,
@@ -278,6 +284,8 @@
 				75E6091E1B3AE77700C9CE31 /* tabbar2.png */,
 				75F707DA1B35FB38005400E2 /* Images.xcassets */,
 				75F707DC1B35FB38005400E2 /* LaunchScreen.xib */,
+				75CF2B271B439F0600D7C716 /* Twitter.framework */,
+				75CF2AF31B439B6900D7C716 /* Accounts.framework */,
 				758A3B391B3CD9AE005E5ADD /* Fabric.framework */,
 				758A3B3A1B3CD9AE005E5ADD /* TwitterKit.framework */,
 				758A3B3B1B3CD9AE005E5ADD /* TwitterKitResources.bundle */,

@@ -218,6 +218,8 @@ class DrawerViewController: UIViewController {
         
         
         UIApplication.sharedApplication().keyWindow?.rootViewController = navigationController
+        
+        
 
 
         
