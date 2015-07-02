@@ -13,9 +13,10 @@ import TwitterKit
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate{
     
     var message:String?
+    var test:String?
 
 
     var window: UIWindow?
@@ -30,29 +31,107 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // Override point for customization after application launch.
         
-        let mainViewController   = MainViewController()
-        let drawerViewController = DrawerViewController()
-        let drawerController     = KYDrawerController()
-        
-        let drawer = drawerController.mainViewController
-
-        let loginViewController = LoginViewController()
-
-        drawerController.mainViewController = UINavigationController(
-            rootViewController: mainViewController
-        )
-        
-        
-        drawerController.drawerViewController = drawerViewController
-        
-        /* Customize
-        drawerController.drawerDirection = .Right
-        drawerController.drawerWidth = 300
-        */
-        
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.rootViewController = drawerController
-        window?.makeKeyAndVisible()
+        if test == nil{
+            let mainViewController = MainViewController()
+            
+            let drawerViewController = DrawerViewController()
+            let drawerController     = KYDrawerController()
+            
+            let drawer = drawerController.mainViewController
+            
+            let loginViewController = LoginViewController()
+            
+            drawerController.mainViewController = UINavigationController(
+                rootViewController: mainViewController
+            )
+            
+            
+            drawerController.drawerViewController = drawerViewController
+            
+            /* Customize
+            drawerController.drawerDirection = .Right
+            drawerController.drawerWidth = 300
+            */
+            
+            window = UIWindow(frame: UIScreen.mainScreen().bounds)
+            window?.rootViewController = drawerController
+            window?.makeKeyAndVisible()
+        }else if test == "0"{
+            let mainViewController = MainViewController()
+            
+            let drawerViewController = DrawerViewController()
+            let drawerController     = KYDrawerController()
+            
+            let drawer = drawerController.mainViewController
+            
+            let loginViewController = LoginViewController()
+            
+            drawerController.mainViewController = UINavigationController(
+                rootViewController: mainViewController
+            )
+            
+            
+            drawerController.drawerViewController = drawerViewController
+            
+            /* Customize
+            drawerController.drawerDirection = .Right
+            drawerController.drawerWidth = 300
+            */
+            
+            window = UIWindow(frame: UIScreen.mainScreen().bounds)
+            window?.rootViewController = drawerController
+            window?.makeKeyAndVisible()
+        }else if test == "1"{
+            let mainViewController = SecondViewController()
+            
+            let drawerViewController = DrawerViewController()
+            let drawerController     = KYDrawerController()
+            
+            let drawer = drawerController.mainViewController
+            
+            let loginViewController = LoginViewController()
+            
+            drawerController.mainViewController = UINavigationController(
+                rootViewController: mainViewController
+            )
+            
+            
+            drawerController.drawerViewController = drawerViewController
+            
+            /* Customize
+            drawerController.drawerDirection = .Right
+            drawerController.drawerWidth = 300
+            */
+            
+            window = UIWindow(frame: UIScreen.mainScreen().bounds)
+            window?.rootViewController = drawerController
+            window?.makeKeyAndVisible()
+        }else if test == "2"{
+            let mainViewController = ThirdViewController()
+            
+            let drawerViewController = DrawerViewController()
+            let drawerController     = KYDrawerController()
+            
+            let drawer = drawerController.mainViewController
+            
+            let loginViewController = LoginViewController()
+            
+            drawerController.mainViewController = UINavigationController(
+                rootViewController: mainViewController
+            )
+            
+            
+            drawerController.drawerViewController = drawerViewController
+            
+            /* Customize
+            drawerController.drawerDirection = .Right
+            drawerController.drawerWidth = 300
+            */
+            
+            window = UIWindow(frame: UIScreen.mainScreen().bounds)
+            window?.rootViewController = drawerController
+            window?.makeKeyAndVisible()
+        }
         
         
         return true

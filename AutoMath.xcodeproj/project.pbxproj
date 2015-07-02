@@ -47,6 +47,7 @@
 		758A3B3F1B3CD9AE005E5ADD /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 758A3B3B1B3CD9AE005E5ADD /* TwitterKitResources.bundle */; };
 		758A3B401B3CD9AE005E5ADD /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758A3B3C1B3CD9AE005E5ADD /* TwitterCore.framework */; };
 		758A3B421B3CDA0B005E5ADD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758A3B411B3CDA0B005E5ADD /* LoginViewController.swift */; };
+		75BA71461B459A770093E841 /* TwitterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BA71451B459A770093E841 /* TwitterAPI.swift */; };
 		75CF2AF01B42DFE300D7C716 /* 1-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 75CF2AEF1B42DFE300D7C716 /* 1-4.png */; };
 		75CF2AF21B42E12600D7C716 /* 1-4-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 75CF2AF11B42E12600D7C716 /* 1-4-A.png */; };
 		75CF2AF41B439B6900D7C716 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CF2AF31B439B6900D7C716 /* Accounts.framework */; };
@@ -126,6 +127,7 @@
 		758A3B3B1B3CD9AE005E5ADD /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
 		758A3B3C1B3CD9AE005E5ADD /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		758A3B411B3CDA0B005E5ADD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		75BA71451B459A770093E841 /* TwitterAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAPI.swift; sourceTree = "<group>"; };
 		75CF2AEF1B42DFE300D7C716 /* 1-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-4.png"; sourceTree = "<group>"; };
 		75CF2AF11B42E12600D7C716 /* 1-4-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-4-A.png"; sourceTree = "<group>"; };
 		75CF2AF31B439B6900D7C716 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -278,6 +280,7 @@
 				752940501B3BFEC3008732C9 /* Parts */,
 				75F707FB1B35FC24005400E2 /* KYDrawerController */,
 				75F707D31B35FB38005400E2 /* AppDelegate.swift */,
+				75BA71451B459A770093E841 /* TwitterAPI.swift */,
 				75E1042D1B3946F500E58275 /* FourthViewController.swift */,
 				75F707D51B35FB38005400E2 /* ViewController.swift */,
 				753D2A3E1B444CDE00580358 /* CalculationViewController.swift */,
@@ -509,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75E1042C1B39464200E58275 /* SecondViewController.swift in Sources */,
+				75BA71461B459A770093E841 /* TwitterAPI.swift in Sources */,
 				75F708001B35FC24005400E2 /* KYEmbedDrawerControllerSegue.swift in Sources */,
 				754353261B3F11D100553AEE /* ThirdViewController.swift in Sources */,
 				75F708011B35FC24005400E2 /* KYEmbedMainControllerSegue.swift in Sources */,

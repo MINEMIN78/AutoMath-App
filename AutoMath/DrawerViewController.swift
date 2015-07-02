@@ -180,6 +180,9 @@ class DrawerViewController: UIViewController {
         
         }
         
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //インスタンスの取得
+        appDelegate.test = "0"
+        
         // 遷移するViewを定義する.
         let myMainViewController: UIViewController = MainViewController()
         
@@ -213,6 +216,9 @@ class DrawerViewController: UIViewController {
             
         }
         
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //インスタンスの取得
+        appDelegate.test = "1"
+        
         var newRootVC = SecondViewController()
         var navigationController = UINavigationController(rootViewController: newRootVC)
         
@@ -240,6 +246,9 @@ class DrawerViewController: UIViewController {
             
         
         }
+        
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //インスタンスの取得
+        appDelegate.test = "2"
         
         var newRootVC = ThirdViewController()
         var navigationController = UINavigationController(rootViewController: newRootVC)

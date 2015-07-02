@@ -8,9 +8,15 @@
 
 import UIKit
 
-class SecondViewController: UIViewController{
+class SecondViewController: UIViewController {
     
     var window: UIWindow?
+    
+//    private let formula1: NSArray = ["f-parts1.png","f-parts2.png","f-parts3.png","f-parts4.png"]
+//    private let formula2: NSArray = ["f-parts5.png","f-parts6.png","f-parts7.png","f-parts8.png"]
+    
+    
+    private let mySections: NSArray = ["中学1年","中学2年","中学3年"]
     
     
     override func viewDidLoad() {
@@ -70,14 +76,7 @@ class SecondViewController: UIViewController{
         let for3 = UIImage(named: "f-parts3.png")
         let for4 = UIImage(named: "f-parts4.png")
         let for5 = UIImage(named: "f-parts5.png")
-        let img1 = UIImage(named:"formula1.png");
-        let img2 = UIImage(named:"formula1.png");
-        let img3 = UIImage(named:"formula1.png");
-        
-        //UIImageViewにUIIimageを追加
-        let imageView1 = UIImageView(image:img1)
-        let imageView2 = UIImageView(image:img2)
-        let imageView3 = UIImageView(image:img3)
+
         
         //formulabutton
         let f1button = UIButton()
@@ -100,36 +99,7 @@ class SecondViewController: UIViewController{
         //f5
         
         
-        //UIScrollViewを作成します
-        let scrView = UIScrollView()
-        
-        //UIScrollViewの1ページ分のサイズ + 表示位置
-        scrView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
-        
-        //全体のサイズ
-        scrView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height*4)
-        
-        //UIImageViewのサイズと位置を決めます
-        imageView1.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
-        imageView2.frame = CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, self.view.frame.size.height)
-        imageView3.frame = CGRectMake(0, self.view.frame.size.height*2, self.view.frame.size.width, self.view.frame.size.height)
-        
-        
-        
-        //viewに追加します
-        self.view.addSubview(scrView)
-        
-        //UIImageViewをScrollViewに追加します
-        scrView.addSubview(imageView1)
-        scrView.addSubview(imageView2)
-        scrView.addSubview(imageView3)
-        
-        // １ページ単位でスクロールさせる
-//        scrView.pagingEnabled = true
-        
-        //scroll view end
-        
-        
+
 
         
     }
@@ -140,7 +110,8 @@ class SecondViewController: UIViewController{
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    
 
     
     
