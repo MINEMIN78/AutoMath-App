@@ -22,19 +22,19 @@ class ThirdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        //Navigation var
-//        let thirdViewController = ThirdViewController()
-//        let drawerViewController = DrawerViewController()
-//        let drawerController     = KYDrawerController()
-//        
-//        drawerController.mainViewController = UINavigationController()
-//        
-//        
-//        drawerController.drawerViewController = drawerViewController
-//        
-//        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-//        window?.rootViewController = drawerController
-//        window?.makeKeyAndVisible()
+        //Navigation var
+        let thirdViewController = ThirdViewController()
+        let drawerViewController = DrawerViewController()
+        let drawerController     = KYDrawerController()
+        
+        drawerController.mainViewController = UINavigationController()
+        
+        
+        drawerController.drawerViewController = drawerViewController
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.rootViewController = drawerController
+        window?.makeKeyAndVisible()
         
         
         //グラデーション start

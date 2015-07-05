@@ -144,7 +144,7 @@ class QuizViewController: UIViewController, UIScrollViewDelegate {
             // 全体の点の色
             _pageControl.pageIndicatorTintColor = UIColor.redColor()
             // 現在の点の色
-            _pageControl.currentPageIndicatorTintColor = UIColor.whiteColor()
+            _pageControl.currentPageIndicatorTintColor = UIColor.blackColor()
             
             self.view.addSubview(_pageControl)
             

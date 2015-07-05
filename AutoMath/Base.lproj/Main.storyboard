@@ -7,7 +7,6 @@
         <!--Quiz View Controller-->
         <scene sceneID="smM-f2-QQw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s2I-E5-63g" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="AFh-pf-4ra" customClass="QuizViewController" customModule="AutoMath" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CGn-P8-M4Z"/>
@@ -20,13 +19,13 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s2I-E5-63g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="166.5" y="240.5"/>
         </scene>
         <!--Calculation View Controller-->
         <scene sceneID="l2O-BH-z2a">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PKM-mc-6pH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="h0y-dF-Jd9" customClass="CalculationViewController" customModule="AutoMath" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qzO-sK-t7w"/>
@@ -39,13 +38,13 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PKM-mc-6pH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-229.5" y="-142.5"/>
         </scene>
         <!--ViewController-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="home" id="vXZ-lx-hvc" userLabel="ViewController" customClass="mainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
@@ -58,13 +57,13 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1016.5" y="-806.5"/>
+            <point key="canvasLocation" x="-382.5" y="-788.5"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="0JJ-Vh-vUW">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hph-9k-81c" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="fWP-h2-8rI" customClass="LoginViewController" customModule="AutoMath" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aTw-Qw-IiX"/>
@@ -77,13 +76,13 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hph-9k-81c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="525.5" y="240.5"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="4WH-UD-sAX">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rx9-f8-1U6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="formula" id="UPv-SA-u0g" customClass="SecondViewController" customModule="AutoMath" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PJU-dd-4h7"/>
@@ -96,13 +95,13 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rx9-f8-1U6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-617.5" y="-217.5"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="aj0-Ky-U4Z">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hg3-rh-lzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="0wM-Vz-okO" customClass="ThirdViewController" customModule="AutoMath" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d37-R1-TIL"/>
@@ -115,8 +114,9 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hg3-rh-lzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="166.5" y="-529.5"/>
+            <point key="canvasLocation" x="104.5" y="-788.5"/>
         </scene>
     </scenes>
 </document>

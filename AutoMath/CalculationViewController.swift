@@ -9,11 +9,30 @@
 import UIKit
 
 class CalculationViewController: UIViewController, UIWebViewDelegate {
+    
+    var window: UIWindow?
 
     private var myWebView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+//        //Navigation var
+//        let mainViewController = MainViewController()
+//        let drawerViewController = DrawerViewController()
+//        let drawerController     = KYDrawerController()
+//        
+//        drawerController.mainViewController = UINavigationController()
+//        
+//        
+//        drawerController.drawerViewController = drawerViewController
+//        
+//        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+//        window?.rootViewController = drawerController
+//        window?.makeKeyAndVisible()
+        
+        
         
         // WebViewを生成.
         myWebView = UIWebView()
